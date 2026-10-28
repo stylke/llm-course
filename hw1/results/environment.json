@@ -1,0 +1,14 @@
+{
+  "run_time_local": "2026-10-27T22:58:07.306614+08:00",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "cpu": "arm",
+  "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "python_executable": "/Users/zym/course/llm/hw1/.venv/bin/python",
+  "kenlm_version": "0.3.0",
+  "lmplz": "/Users/zym/course/llm/hw1/tools/lmplz",
+  "smoothing": "interpolated modified Kneser-Ney (KenLM default)",
+  "memory_budget": "512M",
+  "pruning": "none",
+  "repeats": 3
+}

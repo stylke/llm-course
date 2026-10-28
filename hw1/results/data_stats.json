@@ -1,0 +1,155 @@
+{
+  "source": "/Users/zym/course/llm/人民日报语料/1998-上半年-带音",
+  "encoding": "gb18030",
+  "min_count": 2,
+  "files": [
+    {
+      "file": "1998-01-2003版-带音.txt",
+      "sha256": "37b85555df2f72642ff9815ac01f51d4f50024d80ca0e2e8a6be6f93b1038639",
+      "bytes": 5320005,
+      "split": "train",
+      "nonblank_lines": 19358,
+      "pronunciation_annotations": 14409,
+      "separator_count": 1890,
+      "replacement_characters": 0,
+      "decode_error": null,
+      "dropped_damaged_lines": [],
+      "duplicates_removed": 1496,
+      "short_fragments_removed": 391,
+      "kept_sentences": 44255
+    },
+    {
+      "file": "1998-02-2003版-带音.txt",
+      "sha256": "a050351664f459aed2247bc45cd46c25da2ce893e11c44a9dea06a54529f19d8",
+      "bytes": 5441098,
+      "split": "train",
+      "nonblank_lines": 18847,
+      "pronunciation_annotations": 15387,
+      "separator_count": 1556,
+      "replacement_characters": 0,
+      "decode_error": null,
+      "dropped_damaged_lines": [],
+      "duplicates_removed": 1497,
+      "short_fragments_removed": 391,
+      "kept_sentences": 45115
+    },
+    {
+      "file": "1998-03-2003版-带音.txt",
+      "sha256": "2f9d8ecfd92eec1b8a7009bd146da5faad218a34ae17fe460944bd772b2e97db",
+      "bytes": 5951910,
+      "split": "train",
+      "nonblank_lines": 21497,
+      "pronunciation_annotations": 15067,
+      "separator_count": 1461,
+      "replacement_characters": 1,
+      "decode_error": {
+        "first_byte_offset": 4252061,
+        "reason": "illegal multibyte sequence"
+      },
+      "dropped_damaged_lines": [
+        {
+          "line": 17688,
+          "id": "19980323-09-005-012"
+        }
+      ],
+      "duplicates_removed": 2365,
+      "short_fragments_removed": 349,
+      "kept_sentences": 48951
+    },
+    {
+      "file": "1998-04-2003版-带音.txt",
+      "sha256": "43462d53f2f7603168745af3200a9e6fe883ddcdf18618280358499e0ffc3fca",
+      "bytes": 6107764,
+      "split": "train",
+      "nonblank_lines": 21495,
+      "pronunciation_annotations": 17195,
+      "separator_count": 1949,
+      "replacement_characters": 1,
+      "decode_error": {
+        "first_byte_offset": 5945346,
+        "reason": "illegal multibyte sequence"
+      },
+      "dropped_damaged_lines": [
+        {
+          "line": 24499,
+          "id": "19980430-03-005-007"
+        }
+      ],
+      "duplicates_removed": 2246,
+      "short_fragments_removed": 400,
+      "kept_sentences": 50760
+    },
+    {
+      "file": "1998-05-2003版-带音.txt",
+      "sha256": "04ae37614a55c2418bcb5c7697c4980afa75a74734e930f06bee6e83022d0aea",
+      "bytes": 5920187,
+      "split": "valid",
+      "nonblank_lines": 21421,
+      "pronunciation_annotations": 16866,
+      "separator_count": 1841,
+      "replacement_characters": 3,
+      "decode_error": {
+        "first_byte_offset": 1025114,
+        "reason": "illegal multibyte sequence"
+      },
+      "dropped_damaged_lines": [
+        {
+          "line": 4531,
+          "id": "19980507-04-007-005"
+        },
+        {
+          "line": 4537,
+          "id": "19980507-04-007-011"
+        },
+        {
+          "line": 4539,
+          "id": "19980507-04-007-013"
+        }
+      ],
+      "duplicates_removed": 2201,
+      "short_fragments_removed": 411,
+      "kept_sentences": 48922
+    },
+    {
+      "file": "1998-06-2003版-带音.txt",
+      "sha256": "f18f8f3d6e886644baf8306e1f08a31e3a8d390709782f913ae1ea12f3e97c5f",
+      "bytes": 5946378,
+      "split": "test",
+      "nonblank_lines": 21143,
+      "pronunciation_annotations": 16163,
+      "separator_count": 1890,
+      "replacement_characters": 0,
+      "decode_error": null,
+      "dropped_damaged_lines": [],
+      "duplicates_removed": 2366,
+      "short_fragments_removed": 481,
+      "kept_sentences": 48624
+    }
+  ],
+  "splits": {
+    "train": {
+      "sentences": 189081,
+      "tokens": 4754232,
+      "unknown_tokens": 50591,
+      "unknown_rate": 0.010641256043037025,
+      "sha256": "cb90a9ac81f935ddd291fa589c71cb396ab58f0d1fad6d6bba7d0db10d69f358"
+    },
+    "valid": {
+      "sentences": 48922,
+      "tokens": 1233489,
+      "unknown_tokens": 28275,
+      "unknown_rate": 0.02292278244880984,
+      "sha256": "8f4de415f7b2adbe05c4b95758c221d44396598e61f23fad1055ea22a40dc262"
+    },
+    "test": {
+      "sentences": 48624,
+      "tokens": 1236886,
+      "unknown_tokens": 28103,
+      "unknown_rate": 0.022720768122527057,
+      "sha256": "95ad165916fa5c96f5762c8343c4e6077bfbbbc504fe4e5402e8291528c20f9a"
+    }
+  },
+  "train_types_before_cutoff": 114108,
+  "vocabulary_size_without_specials": 63517,
+  "preprocess_seconds": 4.088102125
+}

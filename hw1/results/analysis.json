@@ -1,0 +1,176 @@
+{
+  "unseen_mle_events": [
+    {
+      "order": 2,
+      "total": 1285510,
+      "unseen": 245617,
+      "rate": 0.19106580267753653
+    },
+    {
+      "order": 3,
+      "total": 1285510,
+      "unseen": 724987,
+      "rate": 0.5639683860880118
+    },
+    {
+      "order": 4,
+      "total": 1285510,
+      "unseen": 1012509,
+      "rate": 0.7876321459965305
+    }
+  ],
+  "conditional_top10": {
+    "2": [
+      {
+        "word": "，",
+        "probability": 0.05268197458993365
+      },
+      {
+        "word": "。",
+        "probability": 0.050283575158170765
+      },
+      {
+        "word": "一",
+        "probability": 0.043243836840930965
+      },
+      {
+        "word": "“",
+        "probability": 0.023380000123761853
+      },
+      {
+        "word": "__RARE__",
+        "probability": 0.012777760098734207
+      },
+      {
+        "word": "一个",
+        "probability": 0.012744070786897191
+      },
+      {
+        "word": "新",
+        "probability": 0.010492708632564518
+      },
+      {
+        "word": "《",
+        "probability": 0.009012928638291917
+      },
+      {
+        "word": "中国",
+        "probability": 0.008055002924600234
+      },
+      {
+        "word": "这",
+        "probability": 0.007934868047849162
+      }
+    ],
+    "3": [
+      {
+        "word": "全国",
+        "probability": 0.061733992311458014
+      },
+      {
+        "word": "一",
+        "probability": 0.04587208657919544
+      },
+      {
+        "word": "全省",
+        "probability": 0.04206350134412861
+      },
+      {
+        "word": "“",
+        "probability": 0.039329017016087854
+      },
+      {
+        "word": "。",
+        "probability": 0.033849357770581616
+      },
+      {
+        "word": "第十五",
+        "probability": 0.03265106111102691
+      },
+      {
+        "word": "，",
+        "probability": 0.022194648380033998
+      },
+      {
+        "word": "两",
+        "probability": 0.019357547481949754
+      },
+      {
+        "word": "第一",
+        "probability": 0.015631618225335132
+      },
+      {
+        "word": "专题",
+        "probability": 0.014541264903109129
+      }
+    ],
+    "4": [
+      {
+        "word": "第十五",
+        "probability": 0.0685097288667008
+      },
+      {
+        "word": "十五大",
+        "probability": 0.04709482158814747
+      },
+      {
+        "word": "一",
+        "probability": 0.0449710843162127
+      },
+      {
+        "word": "“",
+        "probability": 0.038385387640153326
+      },
+      {
+        "word": "。",
+        "probability": 0.03364369051603247
+      },
+      {
+        "word": "全省",
+        "probability": 0.031987554655641876
+      },
+      {
+        "word": "，",
+        "probability": 0.02233924660932721
+      },
+      {
+        "word": "两",
+        "probability": 0.018770455534376805
+      },
+      {
+        "word": "全国",
+        "probability": 0.015672308460756443
+      },
+      {
+        "word": "第一",
+        "probability": 0.015020248153131067
+      }
+    ]
+  },
+  "checks": [
+    {
+      "order": 2,
+      "probability_sum": 0.9999999792555158,
+      "different_prefix_same_suffix_max_log10_delta": 0.0,
+      "incremental_score_matches_sentence_score": true,
+      "saved_generation_reproduced": true,
+      "prompt_has_no_oov": true
+    },
+    {
+      "order": 3,
+      "probability_sum": 0.9999999571467078,
+      "different_prefix_same_suffix_max_log10_delta": 0.0,
+      "incremental_score_matches_sentence_score": true,
+      "saved_generation_reproduced": true,
+      "prompt_has_no_oov": true
+    },
+    {
+      "order": 4,
+      "probability_sum": 1.0000001788241621,
+      "different_prefix_same_suffix_max_log10_delta": 0.0,
+      "incremental_score_matches_sentence_score": true,
+      "saved_generation_reproduced": true,
+      "prompt_has_no_oov": true
+    }
+  ]
+}

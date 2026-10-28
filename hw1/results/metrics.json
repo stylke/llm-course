@@ -1,0 +1,113 @@
+[
+  {
+    "order": 2,
+    "train_seconds": [
+      0.6466500829999999,
+      0.6580928749999995,
+      0.6470244159999998
+    ],
+    "binary_build_seconds": [
+      0.34037062500000026,
+      0.4053710419999996,
+      0.34069883400000034
+    ],
+    "train_median_seconds": 0.6470244159999998,
+    "ngram_counts": {
+      "1": 63521,
+      "2": 1259748
+    },
+    "arpa_bytes": 31981549,
+    "binary_bytes": 9473468,
+    "valid": {
+      "sentences": 48922,
+      "predicted_tokens_with_eos": 1282411,
+      "log10_probability": -3229150.6903510094,
+      "nll_per_token_nats": 5.797980711826136,
+      "perplexity": 329.6332628637665,
+      "seconds": 0.19338725000000068
+    },
+    "test": {
+      "sentences": 48624,
+      "predicted_tokens_with_eos": 1285510,
+      "log10_probability": -3249915.011227131,
+      "nll_per_token_nats": 5.821196146548194,
+      "perplexity": 337.37536274917693,
+      "seconds": 0.1903467919999997
+    }
+  },
+  {
+    "order": 3,
+    "train_seconds": [
+      1.456840625,
+      1.4621352499999993,
+      1.471071792
+    ],
+    "binary_build_seconds": [
+      1.435574583000001,
+      1.4275723330000005,
+      1.4411918749999995
+    ],
+    "train_median_seconds": 1.4621352499999993,
+    "ngram_counts": {
+      "1": 63521,
+      "2": 1259748,
+      "3": 3023329
+    },
+    "arpa_bytes": 135342939,
+    "binary_bytes": 35738854,
+    "valid": {
+      "sentences": 48922,
+      "predicted_tokens_with_eos": 1282411,
+      "log10_probability": -3058750.8332846165,
+      "nll_per_token_nats": 5.4920256235358815,
+      "perplexity": 242.74842610257184,
+      "seconds": 0.2637291659999974
+    },
+    "test": {
+      "sentences": 48624,
+      "predicted_tokens_with_eos": 1285510,
+      "log10_probability": -3087214.41069293,
+      "nll_per_token_nats": 5.5297694152032575,
+      "perplexity": 252.0857771736878,
+      "seconds": 0.25957020900000316
+    }
+  },
+  {
+    "order": 4,
+    "train_seconds": [
+      2.3292606250000016,
+      2.4218362079999984,
+      2.3231673750000006
+    ],
+    "binary_build_seconds": [
+      3.283974707999999,
+      3.2609946669999985,
+      3.273766499999997
+    ],
+    "train_median_seconds": 2.3292606250000016,
+    "ngram_counts": {
+      "1": 63521,
+      "2": 1259748,
+      "3": 3023329,
+      "4": 3864963
+    },
+    "arpa_bytes": 310109908,
+    "binary_bytes": 78853012,
+    "valid": {
+      "sentences": 48922,
+      "predicted_tokens_with_eos": 1282411,
+      "log10_probability": -3033683.914347887,
+      "nll_per_token_nats": 5.447017655052297,
+      "perplexity": 232.06503485921826,
+      "seconds": 0.2985044160000001
+    },
+    "test": {
+      "sentences": 48624,
+      "predicted_tokens_with_eos": 1285510,
+      "log10_probability": -3065068.5128204823,
+      "nll_per_token_nats": 5.490102034698969,
+      "perplexity": 242.28192676025137,
+      "seconds": 0.2954342909999994
+    }
+  }
+]
