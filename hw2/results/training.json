@@ -1,0 +1,215 @@
+{
+  "tfidf": {
+    "vocabulary": 6579,
+    "seconds": 0.21130233304575086
+  },
+  "lsi": {
+    "dimension": 100,
+    "seconds": 0.23389249993488193,
+    "topics": [
+      [
+        0,
+        "-0.159*\"体育\" + -0.129*\"企业\" + -0.119*\"中国\" + -0.102*\"发展\" + -0.094*\"他\" + -0.089*\"经济\" + -0.089*\"是\" + -0.084*\"美国\""
+      ],
+      [
+        1,
+        "-0.380*\"体育\" + -0.166*\"企业\" + 0.147*\"以色列\" + 0.147*\"和平\" + -0.145*\"产业\" + 0.134*\"国\" + 0.128*\"总统\" + 0.126*\"伊拉克\""
+      ],
+      [
+        2,
+        "0.757*\"体育\" + -0.134*\"企业\" + 0.107*\"体委\" + 0.101*\"媒体\" + 0.094*\"产业\" + -0.093*\"元\" + 0.092*\"产业化\" + -0.083*\"科技\""
+      ],
+      [
+        3,
+        "-0.300*\"选手\" + -0.230*\"米\" + -0.199*\"比赛\" + -0.163*\"秒\" + -0.152*\"决赛\" + -0.147*\"冠军\" + -0.141*\"分\" + -0.125*\"游泳\""
+      ],
+      [
+        4,
+        "0.229*\"以色列\" + -0.226*\"其琛\" + -0.224*\"国\" + -0.197*\"俄\" + -0.183*\"钱\" + -0.180*\"关系\" + 0.178*\"伊拉克\" + 0.172*\"中东\""
+      ]
+    ]
+  },
+  "w2v_cbow": {
+    "seconds": 2.046965666930191,
+    "parameters": {
+      "min_count": 2,
+      "negative": 5,
+      "hs": 0,
+      "sample": 0.001,
+      "epochs": 5,
+      "workers": 1,
+      "seed": 2026,
+      "alpha": 0.025,
+      "min_alpha": 0.0001,
+      "ns_exponent": 0.75,
+      "shrink_windows": true,
+      "sg": 0,
+      "vector_size": 100,
+      "window": 5
+    },
+    "corpus": "external",
+    "sentences": 50000,
+    "tokens": 501292,
+    "vocabulary": 25550,
+    "model_bytes": 21198194
+  },
+  "w2v_sg": {
+    "seconds": 6.1073964580427855,
+    "parameters": {
+      "min_count": 2,
+      "negative": 5,
+      "hs": 0,
+      "sample": 0.001,
+      "epochs": 5,
+      "workers": 1,
+      "seed": 2026,
+      "alpha": 0.025,
+      "min_alpha": 0.0001,
+      "ns_exponent": 0.75,
+      "shrink_windows": true,
+      "sg": 1,
+      "vector_size": 100,
+      "window": 5
+    },
+    "corpus": "external",
+    "sentences": 50000,
+    "tokens": 501292,
+    "vocabulary": 25550,
+    "model_bytes": 21198191
+  },
+  "ft_external": {
+    "seconds": 9.02847183297854,
+    "parameters": {
+      "min_count": 2,
+      "negative": 5,
+      "hs": 0,
+      "sample": 0.001,
+      "epochs": 5,
+      "workers": 1,
+      "seed": 2026,
+      "alpha": 0.025,
+      "min_alpha": 0.0001,
+      "ns_exponent": 0.75,
+      "shrink_windows": true,
+      "sg": 1,
+      "vector_size": 100,
+      "window": 5,
+      "min_n": 1,
+      "max_n": 3,
+      "bucket": 50000
+    },
+    "corpus": "external",
+    "sentences": 50000,
+    "tokens": 501292,
+    "vocabulary": 25550,
+    "model_bytes": 41198394
+  },
+  "ft_3_6": {
+    "seconds": 7.6578595420578495,
+    "parameters": {
+      "min_count": 2,
+      "negative": 5,
+      "hs": 0,
+      "sample": 0.001,
+      "epochs": 5,
+      "workers": 1,
+      "seed": 2026,
+      "alpha": 0.025,
+      "min_alpha": 0.0001,
+      "ns_exponent": 0.75,
+      "shrink_windows": true,
+      "sg": 1,
+      "vector_size": 100,
+      "window": 5,
+      "min_n": 3,
+      "max_n": 6,
+      "bucket": 50000
+    },
+    "corpus": "external",
+    "sentences": 50000,
+    "tokens": 501292,
+    "vocabulary": 25550,
+    "model_bytes": 41198389
+  },
+  "ft_adapted": {
+    "seconds": 11.73387441597879,
+    "parameters": {
+      "min_count": 2,
+      "negative": 5,
+      "hs": 0,
+      "sample": 0.001,
+      "epochs": 5,
+      "workers": 1,
+      "seed": 2026,
+      "alpha": 0.025,
+      "min_alpha": 0.0001,
+      "ns_exponent": 0.75,
+      "shrink_windows": true,
+      "sg": 1,
+      "vector_size": 100,
+      "window": 5,
+      "min_n": 1,
+      "max_n": 3,
+      "bucket": 50000
+    },
+    "corpus": "external+train",
+    "sentences": 55953,
+    "tokens": 621533,
+    "vocabulary": 29027,
+    "model_bytes": 44085348
+  },
+  "ft_dim50": {
+    "seconds": 8.966936000040732,
+    "parameters": {
+      "min_count": 2,
+      "negative": 5,
+      "hs": 0,
+      "sample": 0.001,
+      "epochs": 5,
+      "workers": 1,
+      "seed": 2026,
+      "alpha": 0.025,
+      "min_alpha": 0.0001,
+      "ns_exponent": 0.75,
+      "shrink_windows": true,
+      "sg": 1,
+      "vector_size": 50,
+      "window": 5,
+      "min_n": 1,
+      "max_n": 3,
+      "bucket": 50000
+    },
+    "corpus": "external+train",
+    "sentences": 55953,
+    "tokens": 621533,
+    "vocabulary": 29027,
+    "model_bytes": 22474543
+  },
+  "ft_window3": {
+    "seconds": 8.804732583928853,
+    "parameters": {
+      "min_count": 2,
+      "negative": 5,
+      "hs": 0,
+      "sample": 0.001,
+      "epochs": 5,
+      "workers": 1,
+      "seed": 2026,
+      "alpha": 0.025,
+      "min_alpha": 0.0001,
+      "ns_exponent": 0.75,
+      "shrink_windows": true,
+      "sg": 1,
+      "vector_size": 100,
+      "window": 3,
+      "min_n": 1,
+      "max_n": 3,
+      "bucket": 50000
+    },
+    "corpus": "external+train",
+    "sentences": 55953,
+    "tokens": 621533,
+    "vocabulary": 29027,
+    "model_bytes": 44085347
+  }
+}

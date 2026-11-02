@@ -1,0 +1,31 @@
+{
+  "configuration": "ft_adapted, uniform mean, 4class",
+  "runs": [
+    {
+      "seed": 2026,
+      "C": 10.0,
+      "valid_macro_f1": 0.8203945394539454,
+      "test_macro_f1": 0.7117289829911189,
+      "test_accuracy": 0.7089201877934272
+    },
+    {
+      "seed": 7,
+      "C": 10.0,
+      "valid_macro_f1": 0.8292652934972211,
+      "test_macro_f1": 0.727015209161995,
+      "test_accuracy": 0.7230046948356808,
+      "training_and_evaluation_seconds": 11.81220454198774
+    },
+    {
+      "seed": 42,
+      "C": 10.0,
+      "valid_macro_f1": 0.8214261517615177,
+      "test_macro_f1": 0.7069084199626917,
+      "test_accuracy": 0.704225352112676,
+      "training_and_evaluation_seconds": 11.822382166981697
+    }
+  ],
+  "mean_test_macro_f1": 0.7152175373719353,
+  "sample_std_test_macro_f1": 0.01049753550731026,
+  "note": "Descriptive seed variation, not a confidence interval; no seed selected on test."
+}

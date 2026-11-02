@@ -1,0 +1,121 @@
+{
+  "w2v_cbow": {
+    "train": {
+      "tokens": 120241,
+      "in_vocab": 103180,
+      "represented": 103180
+    },
+    "valid": {
+      "tokens": 33642,
+      "in_vocab": 28635,
+      "represented": 28635
+    },
+    "test": {
+      "tokens": 47577,
+      "in_vocab": 40774,
+      "represented": 40774
+    }
+  },
+  "w2v_sg": {
+    "train": {
+      "tokens": 120241,
+      "in_vocab": 103180,
+      "represented": 103180
+    },
+    "valid": {
+      "tokens": 33642,
+      "in_vocab": 28635,
+      "represented": 28635
+    },
+    "test": {
+      "tokens": 47577,
+      "in_vocab": 40774,
+      "represented": 40774
+    }
+  },
+  "ft_external": {
+    "train": {
+      "tokens": 120241,
+      "in_vocab": 103180,
+      "represented": 120241
+    },
+    "valid": {
+      "tokens": 33642,
+      "in_vocab": 28635,
+      "represented": 33642
+    },
+    "test": {
+      "tokens": 47577,
+      "in_vocab": 40774,
+      "represented": 47577
+    }
+  },
+  "ft_3_6": {
+    "train": {
+      "tokens": 120241,
+      "in_vocab": 103180,
+      "represented": 120241
+    },
+    "valid": {
+      "tokens": 33642,
+      "in_vocab": 28635,
+      "represented": 33642
+    },
+    "test": {
+      "tokens": 47577,
+      "in_vocab": 40774,
+      "represented": 47577
+    }
+  },
+  "ft_adapted": {
+    "train": {
+      "tokens": 120241,
+      "in_vocab": 115855,
+      "represented": 120241
+    },
+    "valid": {
+      "tokens": 33642,
+      "in_vocab": 30740,
+      "represented": 33642
+    },
+    "test": {
+      "tokens": 47577,
+      "in_vocab": 43709,
+      "represented": 47577
+    }
+  },
+  "ft_dim50": {
+    "train": {
+      "tokens": 120241,
+      "in_vocab": 115855,
+      "represented": 120241
+    },
+    "valid": {
+      "tokens": 33642,
+      "in_vocab": 30740,
+      "represented": 33642
+    },
+    "test": {
+      "tokens": 47577,
+      "in_vocab": 43709,
+      "represented": 47577
+    }
+  },
+  "ft_window3": {
+    "train": {
+      "tokens": 120241,
+      "in_vocab": 115855,
+      "represented": 120241
+    },
+    "valid": {
+      "tokens": 33642,
+      "in_vocab": 30740,
+      "represented": 33642
+    },
+    "test": {
+      "tokens": 47577,
+      "in_vocab": 43709,
+      "represented": 47577
+    }
+  }
+}

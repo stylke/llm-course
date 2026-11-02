@@ -1,0 +1,270 @@
+2026-11-02 15:44:28,288 INFO adding document #0 to Dictionary<0 unique tokens: []>
+2026-11-02 15:44:28,329 INFO built Dictionary<15552 unique tokens: ['0.5', '1.10', '12月', '3', '30日']...> from 486 documents (total 120241 corpus positions)
+2026-11-02 15:44:28,330 INFO Dictionary lifecycle event {'msg': "built Dictionary<15552 unique tokens: ['0.5', '1.10', '12月', '3', '30日']...> from 486 documents (total 120241 corpus positions)", 'datetime': '2026-11-02T15:44:28.330012', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'created'}
+2026-11-02 15:44:28,335 INFO discarding 8973 tokens: [('1.10', 1), ('业主', 1), ('业户', 1), ('义正辞严', 1), ('二者', 1), ('于洪区', 1), ('五花八门', 1), ('仔细', 1), ('以次充好', 1), ('优等', 1)]...
+2026-11-02 15:44:28,335 INFO keeping 6579 tokens which were in no less than 2 and no more than 486 (=100.0%) documents
+2026-11-02 15:44:28,337 INFO resulting dictionary: Dictionary<6579 unique tokens: ['0.5', '12月', '3', '30日', '50']...>
+2026-11-02 15:44:28,389 WARNING constructor received both corpus and explicit inverse document frequencies; ignoring the corpus
+2026-11-02 15:44:28,490 INFO Dictionary lifecycle event {'fname_or_handle': '/Users/zym/course/llm/hw2/models/dictionary.gensim', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2026-11-02T15:44:28.489921', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'saving'}
+2026-11-02 15:44:28,491 INFO saved /Users/zym/course/llm/hw2/models/dictionary.gensim
+2026-11-02 15:44:28,492 INFO TfidfModel lifecycle event {'fname_or_handle': '/Users/zym/course/llm/hw2/models/tfidf.gensim', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2026-11-02T15:44:28.492124', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'saving'}
+2026-11-02 15:44:28,499 INFO saved /Users/zym/course/llm/hw2/models/tfidf.gensim
+2026-11-02 15:44:28,661 INFO using serial LSI version on this node
+2026-11-02 15:44:28,661 INFO updating model with new documents
+2026-11-02 15:44:28,690 INFO preparing a new chunk of documents
+2026-11-02 15:44:28,693 INFO using 100 extra samples and 2 power iterations
+2026-11-02 15:44:28,693 INFO 1st phase: constructing (6579, 200) action matrix
+2026-11-02 15:44:28,697 INFO orthonormalizing (6579, 200) action matrix
+2026-11-02 15:44:28,846 INFO 2nd phase: running dense svd on (200, 486) matrix
+2026-11-02 15:44:28,856 INFO computing the final decomposition
+2026-11-02 15:44:28,857 INFO keeping 100 factors (discarding 32.806% of energy spectrum)
+2026-11-02 15:44:28,864 INFO processed documents up to #486
+2026-11-02 15:44:28,864 INFO topic #0(3.596): -0.159*"体育" + -0.129*"企业" + -0.119*"中国" + -0.102*"发展" + -0.094*"他" + -0.089*"经济" + -0.089*"是" + -0.084*"美国" + -0.081*"国" + -0.080*"科技"
+2026-11-02 15:44:28,864 INFO topic #1(2.461): -0.380*"体育" + -0.166*"企业" + 0.147*"以色列" + 0.147*"和平" + -0.145*"产业" + 0.134*"国" + 0.128*"总统" + 0.126*"伊拉克" + 0.123*"美国" + 0.118*"中东"
+2026-11-02 15:44:28,864 INFO topic #2(2.244): 0.757*"体育" + -0.134*"企业" + 0.107*"体委" + 0.101*"媒体" + 0.094*"产业" + -0.093*"元" + 0.092*"产业化" + -0.083*"科技" + -0.073*"银行" + -0.072*"改革"
+2026-11-02 15:44:28,865 INFO topic #3(2.185): -0.300*"选手" + -0.230*"米" + -0.199*"比赛" + -0.163*"秒" + -0.152*"决赛" + -0.147*"冠军" + -0.141*"分" + -0.125*"游泳" + -0.123*"男子" + 0.121*"体育"
+2026-11-02 15:44:28,865 INFO topic #4(2.000): 0.229*"以色列" + -0.226*"其琛" + -0.224*"国" + -0.197*"俄" + -0.183*"钱" + -0.180*"关系" + 0.178*"伊拉克" + 0.172*"中东" + 0.163*"和平" + 0.151*"内塔尼亚胡"
+2026-11-02 15:44:28,866 INFO LsiModel lifecycle event {'msg': 'trained LsiModel<num_terms=6579, num_topics=100, decay=1.0, chunksize=20000> in 0.20s', 'datetime': '2026-11-02T15:44:28.866262', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'created'}
+2026-11-02 15:44:28,866 INFO Projection lifecycle event {'fname_or_handle': '/Users/zym/course/llm/hw2/models/lsi.gensim.projection', 'separately': 'None', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2026-11-02T15:44:28.866550', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'saving'}
+2026-11-02 15:44:28,868 INFO saved /Users/zym/course/llm/hw2/models/lsi.gensim.projection
+2026-11-02 15:44:28,869 INFO LsiModel lifecycle event {'fname_or_handle': '/Users/zym/course/llm/hw2/models/lsi.gensim', 'separately': 'None', 'sep_limit': 10485760, 'ignore': ['projection', 'dispatcher'], 'datetime': '2026-11-02T15:44:28.869082', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'saving'}
+2026-11-02 15:44:28,869 INFO not storing attribute projection
+2026-11-02 15:44:28,869 INFO not storing attribute dispatcher
+2026-11-02 15:44:28,871 INFO saved /Users/zym/course/llm/hw2/models/lsi.gensim
+2026-11-02 15:44:28,941 INFO collecting all words and their counts
+2026-11-02 15:44:28,941 INFO PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2026-11-02 15:44:28,949 INFO PROGRESS: at sentence #10000, processed 99891 words, keeping 20868 word types
+2026-11-02 15:44:28,957 INFO PROGRESS: at sentence #20000, processed 199907 words, keeping 29615 word types
+2026-11-02 15:44:28,965 INFO PROGRESS: at sentence #30000, processed 300351 words, keeping 35869 word types
+2026-11-02 15:44:28,973 INFO PROGRESS: at sentence #40000, processed 401005 words, keeping 40901 word types
+2026-11-02 15:44:28,982 INFO collected 45085 word types from a corpus of 501292 raw words and 50000 sentences
+2026-11-02 15:44:28,982 INFO Creating a fresh vocabulary
+2026-11-02 15:44:29,013 INFO Word2Vec lifecycle event {'msg': 'effective_min_count=2 retains 25550 unique words (56.67% of original 45085, drops 19535)', 'datetime': '2026-11-02T15:44:29.013401', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2026-11-02 15:44:29,013 INFO Word2Vec lifecycle event {'msg': 'effective_min_count=2 leaves 481757 word corpus (96.10% of original 501292, drops 19535)', 'datetime': '2026-11-02T15:44:29.013847', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2026-11-02 15:44:29,049 INFO deleting the raw counts dictionary of 45085 items
+2026-11-02 15:44:29,049 INFO sample=0.001 downsamples 23 most-common words
+2026-11-02 15:44:29,049 INFO Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 469295.8331197279 word corpus (97.4%% of prior 481757)', 'datetime': '2026-11-02T15:44:29.049817', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2026-11-02 15:44:29,105 INFO estimated required memory for 25550 words and 100 dimensions: 33215000 bytes
+2026-11-02 15:44:29,105 INFO resetting layer weights
+2026-11-02 15:44:29,111 INFO Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-11-02T15:44:29.110939', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'build_vocab'}
+2026-11-02 15:44:29,111 INFO Word2Vec lifecycle event {'msg': 'training model with 1 workers on 25550 vocabulary and 100 features, using sg=0 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2026-11-02T15:44:29.111170', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'train'}
+2026-11-02 15:44:29,484 INFO EPOCH 0: training on 501292 raw words (469236 effective words) took 0.4s, 1261966 effective words/s
+2026-11-02 15:44:29,857 INFO EPOCH 1: training on 501292 raw words (469143 effective words) took 0.4s, 1260493 effective words/s
+2026-11-02 15:44:30,240 INFO EPOCH 2: training on 501292 raw words (469369 effective words) took 0.4s, 1230857 effective words/s
+2026-11-02 15:44:30,615 INFO EPOCH 3: training on 501292 raw words (469114 effective words) took 0.4s, 1253279 effective words/s
+2026-11-02 15:44:30,987 INFO EPOCH 4: training on 501292 raw words (469408 effective words) took 0.4s, 1267149 effective words/s
+2026-11-02 15:44:30,987 INFO Word2Vec lifecycle event {'msg': 'training on 2506460 raw words (2346270 effective words) took 1.9s, 1250589 effective words/s', 'datetime': '2026-11-02T15:44:30.987480', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'train'}
+2026-11-02 15:44:30,987 INFO Word2Vec lifecycle event {'params': 'Word2Vec<vocab=25550, vector_size=100, alpha=0.025>', 'datetime': '2026-11-02T15:44:30.987691', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'created'}
+2026-11-02 15:44:30,987 INFO Word2Vec lifecycle event {'fname_or_handle': '/Users/zym/course/llm/hw2/models/w2v_cbow.gensim', 'separately': '[]', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2026-11-02T15:44:30.987900', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'saving'}
+2026-11-02 15:44:30,988 INFO not storing attribute cum_table
+2026-11-02 15:44:30,997 INFO saved /Users/zym/course/llm/hw2/models/w2v_cbow.gensim
+2026-11-02 15:44:31,524 INFO collecting all words and their counts
+2026-11-02 15:44:31,524 INFO PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2026-11-02 15:44:31,532 INFO PROGRESS: at sentence #10000, processed 99891 words, keeping 20868 word types
+2026-11-02 15:44:31,543 INFO PROGRESS: at sentence #20000, processed 199907 words, keeping 29615 word types
+2026-11-02 15:44:31,560 INFO PROGRESS: at sentence #30000, processed 300351 words, keeping 35869 word types
+2026-11-02 15:44:31,568 INFO PROGRESS: at sentence #40000, processed 401005 words, keeping 40901 word types
+2026-11-02 15:44:31,575 INFO collected 45085 word types from a corpus of 501292 raw words and 50000 sentences
+2026-11-02 15:44:31,576 INFO Creating a fresh vocabulary
+2026-11-02 15:44:31,604 INFO Word2Vec lifecycle event {'msg': 'effective_min_count=2 retains 25550 unique words (56.67% of original 45085, drops 19535)', 'datetime': '2026-11-02T15:44:31.604130', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2026-11-02 15:44:31,604 INFO Word2Vec lifecycle event {'msg': 'effective_min_count=2 leaves 481757 word corpus (96.10% of original 501292, drops 19535)', 'datetime': '2026-11-02T15:44:31.604410', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2026-11-02 15:44:31,639 INFO deleting the raw counts dictionary of 45085 items
+2026-11-02 15:44:31,639 INFO sample=0.001 downsamples 23 most-common words
+2026-11-02 15:44:31,639 INFO Word2Vec lifecycle event {'msg': 'downsampling leaves estimated 469295.8331197279 word corpus (97.4%% of prior 481757)', 'datetime': '2026-11-02T15:44:31.639794', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2026-11-02 15:44:31,693 INFO estimated required memory for 25550 words and 100 dimensions: 33215000 bytes
+2026-11-02 15:44:31,694 INFO resetting layer weights
+2026-11-02 15:44:31,699 INFO Word2Vec lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-11-02T15:44:31.699493', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'build_vocab'}
+2026-11-02 15:44:31,699 INFO Word2Vec lifecycle event {'msg': 'training model with 1 workers on 25550 vocabulary and 100 features, using sg=1 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2026-11-02T15:44:31.699735', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'train'}
+2026-11-02 15:44:32,711 INFO EPOCH 0 - PROGRESS: at 85.71% examples, 397898 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:44:32,877 INFO EPOCH 0: training on 501292 raw words (469236 effective words) took 1.2s, 398627 effective words/s
+2026-11-02 15:44:33,900 INFO EPOCH 1 - PROGRESS: at 85.71% examples, 393809 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:44:34,067 INFO EPOCH 1: training on 501292 raw words (469143 effective words) took 1.2s, 394967 effective words/s
+2026-11-02 15:44:35,088 INFO EPOCH 2 - PROGRESS: at 85.71% examples, 394399 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:44:35,253 INFO EPOCH 2: training on 501292 raw words (469369 effective words) took 1.2s, 395777 effective words/s
+2026-11-02 15:44:36,262 INFO EPOCH 3 - PROGRESS: at 85.71% examples, 399217 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:44:36,429 INFO EPOCH 3: training on 501292 raw words (469114 effective words) took 1.2s, 399543 effective words/s
+2026-11-02 15:44:37,434 INFO EPOCH 4 - PROGRESS: at 83.72% examples, 391490 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:44:37,630 INFO EPOCH 4: training on 501292 raw words (469408 effective words) took 1.2s, 390983 effective words/s
+2026-11-02 15:44:37,631 INFO Word2Vec lifecycle event {'msg': 'training on 2506460 raw words (2346270 effective words) took 5.9s, 395563 effective words/s', 'datetime': '2026-11-02T15:44:37.631367', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'train'}
+2026-11-02 15:44:37,631 INFO Word2Vec lifecycle event {'params': 'Word2Vec<vocab=25550, vector_size=100, alpha=0.025>', 'datetime': '2026-11-02T15:44:37.631579', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'created'}
+2026-11-02 15:44:37,631 INFO Word2Vec lifecycle event {'fname_or_handle': '/Users/zym/course/llm/hw2/models/w2v_sg.gensim', 'separately': '[]', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2026-11-02T15:44:37.631778', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'saving'}
+2026-11-02 15:44:37,631 INFO not storing attribute cum_table
+2026-11-02 15:44:37,640 INFO saved /Users/zym/course/llm/hw2/models/w2v_sg.gensim
+2026-11-02 15:44:38,169 INFO collecting all words and their counts
+2026-11-02 15:44:38,169 INFO PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2026-11-02 15:44:38,176 INFO PROGRESS: at sentence #10000, processed 99891 words, keeping 20868 word types
+2026-11-02 15:44:38,184 INFO PROGRESS: at sentence #20000, processed 199907 words, keeping 29615 word types
+2026-11-02 15:44:38,190 INFO PROGRESS: at sentence #30000, processed 300351 words, keeping 35869 word types
+2026-11-02 15:44:38,197 INFO PROGRESS: at sentence #40000, processed 401005 words, keeping 40901 word types
+2026-11-02 15:44:38,205 INFO collected 45085 word types from a corpus of 501292 raw words and 50000 sentences
+2026-11-02 15:44:38,205 INFO Creating a fresh vocabulary
+2026-11-02 15:44:38,235 INFO FastText lifecycle event {'msg': 'effective_min_count=2 retains 25550 unique words (56.67% of original 45085, drops 19535)', 'datetime': '2026-11-02T15:44:38.235606', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2026-11-02 15:44:38,236 INFO FastText lifecycle event {'msg': 'effective_min_count=2 leaves 481757 word corpus (96.10% of original 501292, drops 19535)', 'datetime': '2026-11-02T15:44:38.236069', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2026-11-02 15:44:38,270 INFO deleting the raw counts dictionary of 45085 items
+2026-11-02 15:44:38,271 INFO sample=0.001 downsamples 23 most-common words
+2026-11-02 15:44:38,271 INFO FastText lifecycle event {'msg': 'downsampling leaves estimated 469295.8331197279 word corpus (97.4%% of prior 481757)', 'datetime': '2026-11-02T15:44:38.271617', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2026-11-02 15:44:38,352 INFO estimated required memory for 25550 words, 50000 buckets and 100 dimensions: 56586300 bytes
+2026-11-02 15:44:38,352 INFO resetting layer weights
+2026-11-02 15:44:38,505 INFO FastText lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-11-02T15:44:38.505794', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'build_vocab'}
+2026-11-02 15:44:38,506 INFO FastText lifecycle event {'msg': 'training model with 1 workers on 25550 vocabulary and 100 features, using sg=1 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2026-11-02T15:44:38.506148', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'train'}
+2026-11-02 15:44:39,530 INFO EPOCH 0 - PROGRESS: at 61.88% examples, 283309 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:44:40,168 INFO EPOCH 0: training on 501292 raw words (469236 effective words) took 1.7s, 282458 effective words/s
+2026-11-02 15:44:41,182 INFO EPOCH 1 - PROGRESS: at 57.90% examples, 267666 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:44:41,891 INFO EPOCH 1: training on 501292 raw words (469143 effective words) took 1.7s, 272481 effective words/s
+2026-11-02 15:44:42,900 INFO EPOCH 2 - PROGRESS: at 59.90% examples, 278389 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:44:43,710 INFO EPOCH 2: training on 501292 raw words (469369 effective words) took 1.8s, 258236 effective words/s
+2026-11-02 15:44:44,715 INFO EPOCH 3 - PROGRESS: at 59.90% examples, 279388 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:44:45,386 INFO EPOCH 3: training on 501292 raw words (469114 effective words) took 1.7s, 280026 effective words/s
+2026-11-02 15:44:46,410 INFO EPOCH 4 - PROGRESS: at 59.90% examples, 274644 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:44:47,093 INFO EPOCH 4: training on 501292 raw words (469408 effective words) took 1.7s, 275137 effective words/s
+2026-11-02 15:44:47,094 INFO FastText lifecycle event {'msg': 'training on 2506460 raw words (2346270 effective words) took 8.6s, 273210 effective words/s', 'datetime': '2026-11-02T15:44:47.094098', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'train'}
+2026-11-02 15:44:47,197 INFO FastText lifecycle event {'params': 'FastText<vocab=25550, vector_size=100, alpha=0.025>', 'datetime': '2026-11-02T15:44:47.197451', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'created'}
+2026-11-02 15:44:47,197 INFO FastText lifecycle event {'fname_or_handle': '/Users/zym/course/llm/hw2/models/ft_external.gensim', 'separately': '[]', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2026-11-02T15:44:47.197804', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'saving'}
+2026-11-02 15:44:47,198 INFO not storing attribute buckets_word
+2026-11-02 15:44:47,198 INFO not storing attribute vectors
+2026-11-02 15:44:47,198 INFO not storing attribute cum_table
+2026-11-02 15:44:47,210 INFO saved /Users/zym/course/llm/hw2/models/ft_external.gensim
+2026-11-02 15:44:47,924 INFO collecting all words and their counts
+2026-11-02 15:44:47,924 INFO PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2026-11-02 15:44:47,931 INFO PROGRESS: at sentence #10000, processed 99891 words, keeping 20868 word types
+2026-11-02 15:44:47,938 INFO PROGRESS: at sentence #20000, processed 199907 words, keeping 29615 word types
+2026-11-02 15:44:47,945 INFO PROGRESS: at sentence #30000, processed 300351 words, keeping 35869 word types
+2026-11-02 15:44:47,952 INFO PROGRESS: at sentence #40000, processed 401005 words, keeping 40901 word types
+2026-11-02 15:44:47,960 INFO collected 45085 word types from a corpus of 501292 raw words and 50000 sentences
+2026-11-02 15:44:47,960 INFO Creating a fresh vocabulary
+2026-11-02 15:44:47,987 INFO FastText lifecycle event {'msg': 'effective_min_count=2 retains 25550 unique words (56.67% of original 45085, drops 19535)', 'datetime': '2026-11-02T15:44:47.987669', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2026-11-02 15:44:47,988 INFO FastText lifecycle event {'msg': 'effective_min_count=2 leaves 481757 word corpus (96.10% of original 501292, drops 19535)', 'datetime': '2026-11-02T15:44:47.988001', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2026-11-02 15:44:48,021 INFO deleting the raw counts dictionary of 45085 items
+2026-11-02 15:44:48,022 INFO sample=0.001 downsamples 23 most-common words
+2026-11-02 15:44:48,022 INFO FastText lifecycle event {'msg': 'downsampling leaves estimated 469295.8331197279 word corpus (97.4%% of prior 481757)', 'datetime': '2026-11-02T15:44:48.022238', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2026-11-02 15:44:48,093 INFO estimated required memory for 25550 words, 50000 buckets and 100 dimensions: 56202996 bytes
+2026-11-02 15:44:48,093 INFO resetting layer weights
+2026-11-02 15:44:48,203 INFO FastText lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-11-02T15:44:48.203363', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'build_vocab'}
+2026-11-02 15:44:48,203 INFO FastText lifecycle event {'msg': 'training model with 1 workers on 25550 vocabulary and 100 features, using sg=1 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2026-11-02T15:44:48.203749', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'train'}
+2026-11-02 15:44:49,217 INFO EPOCH 0 - PROGRESS: at 69.82% examples, 323253 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:44:49,670 INFO EPOCH 0: training on 501292 raw words (469236 effective words) took 1.5s, 320075 effective words/s
+2026-11-02 15:44:50,695 INFO EPOCH 1 - PROGRESS: at 69.82% examples, 319782 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:44:51,132 INFO EPOCH 1: training on 501292 raw words (469143 effective words) took 1.5s, 321278 effective words/s
+2026-11-02 15:44:52,143 INFO EPOCH 2 - PROGRESS: at 69.82% examples, 324071 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:44:52,599 INFO EPOCH 2: training on 501292 raw words (469369 effective words) took 1.5s, 320082 effective words/s
+2026-11-02 15:44:53,608 INFO EPOCH 3 - PROGRESS: at 69.82% examples, 324625 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:44:54,043 INFO EPOCH 3: training on 501292 raw words (469114 effective words) took 1.4s, 325126 effective words/s
+2026-11-02 15:44:55,055 INFO EPOCH 4 - PROGRESS: at 69.82% examples, 324119 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:44:55,511 INFO EPOCH 4: training on 501292 raw words (469408 effective words) took 1.5s, 319952 effective words/s
+2026-11-02 15:44:55,512 INFO FastText lifecycle event {'msg': 'training on 2506460 raw words (2346270 effective words) took 7.3s, 321045 effective words/s', 'datetime': '2026-11-02T15:44:55.512165', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'train'}
+2026-11-02 15:44:55,581 INFO FastText lifecycle event {'params': 'FastText<vocab=25550, vector_size=100, alpha=0.025>', 'datetime': '2026-11-02T15:44:55.581431', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'created'}
+2026-11-02 15:44:55,581 INFO FastText lifecycle event {'fname_or_handle': '/Users/zym/course/llm/hw2/models/ft_3_6.gensim', 'separately': '[]', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2026-11-02T15:44:55.581832', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'saving'}
+2026-11-02 15:44:55,582 INFO not storing attribute buckets_word
+2026-11-02 15:44:55,582 INFO not storing attribute vectors
+2026-11-02 15:44:55,582 INFO not storing attribute cum_table
+2026-11-02 15:44:55,593 INFO saved /Users/zym/course/llm/hw2/models/ft_3_6.gensim
+2026-11-02 15:44:56,278 INFO collecting all words and their counts
+2026-11-02 15:44:56,278 INFO PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2026-11-02 15:44:56,285 INFO PROGRESS: at sentence #10000, processed 99891 words, keeping 20868 word types
+2026-11-02 15:44:56,293 INFO PROGRESS: at sentence #20000, processed 199907 words, keeping 29615 word types
+2026-11-02 15:44:56,300 INFO PROGRESS: at sentence #30000, processed 300351 words, keeping 35869 word types
+2026-11-02 15:44:56,307 INFO PROGRESS: at sentence #40000, processed 401005 words, keeping 40901 word types
+2026-11-02 15:44:56,314 INFO PROGRESS: at sentence #50000, processed 501292 words, keeping 45085 word types
+2026-11-02 15:44:56,322 INFO collected 51358 word types from a corpus of 621533 raw words and 55953 sentences
+2026-11-02 15:44:56,323 INFO Creating a fresh vocabulary
+2026-11-02 15:44:56,355 INFO FastText lifecycle event {'msg': 'effective_min_count=2 retains 29027 unique words (56.52% of original 51358, drops 22331)', 'datetime': '2026-11-02T15:44:56.355246', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2026-11-02 15:44:56,355 INFO FastText lifecycle event {'msg': 'effective_min_count=2 leaves 599202 word corpus (96.41% of original 621533, drops 22331)', 'datetime': '2026-11-02T15:44:56.355591', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2026-11-02 15:44:56,394 INFO deleting the raw counts dictionary of 51358 items
+2026-11-02 15:44:56,394 INFO sample=0.001 downsamples 26 most-common words
+2026-11-02 15:44:56,395 INFO FastText lifecycle event {'msg': 'downsampling leaves estimated 581539.0402677733 word corpus (97.1%% of prior 599202)', 'datetime': '2026-11-02T15:44:56.395134', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2026-11-02 15:44:56,485 INFO estimated required memory for 29027 words, 50000 buckets and 100 dimensions: 61573908 bytes
+2026-11-02 15:44:56,485 INFO resetting layer weights
+2026-11-02 15:44:56,656 INFO FastText lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-11-02T15:44:56.655837', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'build_vocab'}
+2026-11-02 15:44:56,656 INFO FastText lifecycle event {'msg': 'training model with 1 workers on 29027 vocabulary and 100 features, using sg=1 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2026-11-02T15:44:56.656399', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'train'}
+2026-11-02 15:44:57,690 INFO EPOCH 0 - PROGRESS: at 53.53% examples, 273048 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:44:58,718 INFO EPOCH 0 - PROGRESS: at 97.13% examples, 267993 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:44:58,832 INFO EPOCH 0: training on 621533 raw words (581471 effective words) took 2.2s, 267343 effective words/s
+2026-11-02 15:44:59,843 INFO EPOCH 1 - PROGRESS: at 46.46% examples, 241905 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:45:00,856 INFO EPOCH 1 - PROGRESS: at 93.63% examples, 254989 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:45:01,114 INFO EPOCH 1: training on 621533 raw words (581462 effective words) took 2.3s, 254953 effective words/s
+2026-11-02 15:45:02,148 INFO EPOCH 2 - PROGRESS: at 51.74% examples, 264088 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:45:03,158 INFO EPOCH 2 - PROGRESS: at 96.29% examples, 265834 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:45:03,309 INFO EPOCH 2: training on 621533 raw words (581605 effective words) took 2.2s, 265101 effective words/s
+2026-11-02 15:45:04,326 INFO EPOCH 3 - PROGRESS: at 53.53% examples, 277546 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:45:05,364 INFO EPOCH 3 - PROGRESS: at 97.13% examples, 268956 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:45:05,494 INFO EPOCH 3: training on 621533 raw words (581671 effective words) took 2.2s, 266268 effective words/s
+2026-11-02 15:45:06,497 INFO EPOCH 4 - PROGRESS: at 46.46% examples, 244090 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:45:07,520 INFO EPOCH 4 - PROGRESS: at 90.99% examples, 241364 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:45:07,892 INFO EPOCH 4: training on 621533 raw words (581536 effective words) took 2.4s, 242652 effective words/s
+2026-11-02 15:45:07,893 INFO FastText lifecycle event {'msg': 'training on 3107665 raw words (2907745 effective words) took 11.2s, 258776 effective words/s', 'datetime': '2026-11-02T15:45:07.893170', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'train'}
+2026-11-02 15:45:08,011 INFO FastText lifecycle event {'params': 'FastText<vocab=29027, vector_size=100, alpha=0.025>', 'datetime': '2026-11-02T15:45:08.011413', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'created'}
+2026-11-02 15:45:08,012 INFO FastText lifecycle event {'fname_or_handle': '/Users/zym/course/llm/hw2/models/ft_adapted.gensim', 'separately': '[]', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2026-11-02T15:45:08.012016', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'saving'}
+2026-11-02 15:45:08,012 INFO not storing attribute buckets_word
+2026-11-02 15:45:08,012 INFO not storing attribute vectors
+2026-11-02 15:45:08,012 INFO not storing attribute cum_table
+2026-11-02 15:45:08,027 INFO saved /Users/zym/course/llm/hw2/models/ft_adapted.gensim
+2026-11-02 15:45:09,080 INFO collecting all words and their counts
+2026-11-02 15:45:09,081 INFO PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2026-11-02 15:45:09,088 INFO PROGRESS: at sentence #10000, processed 99891 words, keeping 20868 word types
+2026-11-02 15:45:09,095 INFO PROGRESS: at sentence #20000, processed 199907 words, keeping 29615 word types
+2026-11-02 15:45:09,102 INFO PROGRESS: at sentence #30000, processed 300351 words, keeping 35869 word types
+2026-11-02 15:45:09,109 INFO PROGRESS: at sentence #40000, processed 401005 words, keeping 40901 word types
+2026-11-02 15:45:09,117 INFO PROGRESS: at sentence #50000, processed 501292 words, keeping 45085 word types
+2026-11-02 15:45:09,125 INFO collected 51358 word types from a corpus of 621533 raw words and 55953 sentences
+2026-11-02 15:45:09,125 INFO Creating a fresh vocabulary
+2026-11-02 15:45:09,157 INFO FastText lifecycle event {'msg': 'effective_min_count=2 retains 29027 unique words (56.52% of original 51358, drops 22331)', 'datetime': '2026-11-02T15:45:09.156777', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2026-11-02 15:45:09,157 INFO FastText lifecycle event {'msg': 'effective_min_count=2 leaves 599202 word corpus (96.41% of original 621533, drops 22331)', 'datetime': '2026-11-02T15:45:09.157198', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2026-11-02 15:45:09,196 INFO deleting the raw counts dictionary of 51358 items
+2026-11-02 15:45:09,197 INFO sample=0.001 downsamples 26 most-common words
+2026-11-02 15:45:09,197 INFO FastText lifecycle event {'msg': 'downsampling leaves estimated 581539.0402677733 word corpus (97.1%% of prior 599202)', 'datetime': '2026-11-02T15:45:09.197184', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2026-11-02 15:45:09,287 INFO estimated required memory for 29027 words, 50000 buckets and 50 dimensions: 39963108 bytes
+2026-11-02 15:45:09,287 INFO resetting layer weights
+2026-11-02 15:45:09,445 INFO FastText lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-11-02T15:45:09.443590', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'build_vocab'}
+2026-11-02 15:45:09,445 INFO FastText lifecycle event {'msg': 'training model with 1 workers on 29027 vocabulary and 50 features, using sg=1 hs=0 sample=0.001 negative=5 window=5 shrink_windows=True', 'datetime': '2026-11-02T15:45:09.445637', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'train'}
+2026-11-02 15:45:10,452 INFO EPOCH 0 - PROGRESS: at 65.93% examples, 345829 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:45:11,140 INFO EPOCH 0: training on 621533 raw words (581471 effective words) took 1.7s, 343234 effective words/s
+2026-11-02 15:45:12,162 INFO EPOCH 1 - PROGRESS: at 69.50% examples, 359312 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:45:12,797 INFO EPOCH 1: training on 621533 raw words (581462 effective words) took 1.7s, 351176 effective words/s
+2026-11-02 15:45:13,809 INFO EPOCH 2 - PROGRESS: at 67.71% examples, 353493 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:45:14,466 INFO EPOCH 2: training on 621533 raw words (581605 effective words) took 1.7s, 348671 effective words/s
+2026-11-02 15:45:15,474 INFO EPOCH 3 - PROGRESS: at 62.39% examples, 326894 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:45:16,254 INFO EPOCH 3: training on 621533 raw words (581671 effective words) took 1.8s, 325639 effective words/s
+2026-11-02 15:45:17,269 INFO EPOCH 4 - PROGRESS: at 67.71% examples, 352244 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:45:17,936 INFO EPOCH 4: training on 621533 raw words (581536 effective words) took 1.7s, 345949 effective words/s
+2026-11-02 15:45:17,936 INFO FastText lifecycle event {'msg': 'training on 3107665 raw words (2907745 effective words) took 8.5s, 342464 effective words/s', 'datetime': '2026-11-02T15:45:17.936481', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'train'}
+2026-11-02 15:45:18,047 INFO FastText lifecycle event {'params': 'FastText<vocab=29027, vector_size=50, alpha=0.025>', 'datetime': '2026-11-02T15:45:18.047266', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'created'}
+2026-11-02 15:45:18,047 INFO FastText lifecycle event {'fname_or_handle': '/Users/zym/course/llm/hw2/models/ft_dim50.gensim', 'separately': '[]', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2026-11-02T15:45:18.047659', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'saving'}
+2026-11-02 15:45:18,047 INFO not storing attribute buckets_word
+2026-11-02 15:45:18,048 INFO not storing attribute vectors
+2026-11-02 15:45:18,048 INFO not storing attribute cum_table
+2026-11-02 15:45:18,057 INFO saved /Users/zym/course/llm/hw2/models/ft_dim50.gensim
+2026-11-02 15:45:18,739 INFO collecting all words and their counts
+2026-11-02 15:45:18,740 INFO PROGRESS: at sentence #0, processed 0 words, keeping 0 word types
+2026-11-02 15:45:18,747 INFO PROGRESS: at sentence #10000, processed 99891 words, keeping 20868 word types
+2026-11-02 15:45:18,755 INFO PROGRESS: at sentence #20000, processed 199907 words, keeping 29615 word types
+2026-11-02 15:45:18,762 INFO PROGRESS: at sentence #30000, processed 300351 words, keeping 35869 word types
+2026-11-02 15:45:18,769 INFO PROGRESS: at sentence #40000, processed 401005 words, keeping 40901 word types
+2026-11-02 15:45:18,777 INFO PROGRESS: at sentence #50000, processed 501292 words, keeping 45085 word types
+2026-11-02 15:45:18,785 INFO collected 51358 word types from a corpus of 621533 raw words and 55953 sentences
+2026-11-02 15:45:18,785 INFO Creating a fresh vocabulary
+2026-11-02 15:45:18,817 INFO FastText lifecycle event {'msg': 'effective_min_count=2 retains 29027 unique words (56.52% of original 51358, drops 22331)', 'datetime': '2026-11-02T15:45:18.817053', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2026-11-02 15:45:18,817 INFO FastText lifecycle event {'msg': 'effective_min_count=2 leaves 599202 word corpus (96.41% of original 621533, drops 22331)', 'datetime': '2026-11-02T15:45:18.817387', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2026-11-02 15:45:18,856 INFO deleting the raw counts dictionary of 51358 items
+2026-11-02 15:45:18,856 INFO sample=0.001 downsamples 26 most-common words
+2026-11-02 15:45:18,857 INFO FastText lifecycle event {'msg': 'downsampling leaves estimated 581539.0402677733 word corpus (97.1%% of prior 599202)', 'datetime': '2026-11-02T15:45:18.857097', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'prepare_vocab'}
+2026-11-02 15:45:18,946 INFO estimated required memory for 29027 words, 50000 buckets and 100 dimensions: 61573908 bytes
+2026-11-02 15:45:18,946 INFO resetting layer weights
+2026-11-02 15:45:19,118 INFO FastText lifecycle event {'update': False, 'trim_rule': 'None', 'datetime': '2026-11-02T15:45:19.117710', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'build_vocab'}
+2026-11-02 15:45:19,118 INFO FastText lifecycle event {'msg': 'training model with 1 workers on 29027 vocabulary and 100 features, using sg=1 hs=0 sample=0.001 negative=5 window=3 shrink_windows=True', 'datetime': '2026-11-02T15:45:19.118232', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'train'}
+2026-11-02 15:45:20,122 INFO EPOCH 0 - PROGRESS: at 65.93% examples, 346747 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:45:20,804 INFO EPOCH 0: training on 621533 raw words (581466 effective words) took 1.7s, 345138 effective words/s
+2026-11-02 15:45:21,809 INFO EPOCH 1 - PROGRESS: at 67.71% examples, 355729 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:45:22,460 INFO EPOCH 1: training on 621533 raw words (581667 effective words) took 1.7s, 351379 effective words/s
+2026-11-02 15:45:23,470 INFO EPOCH 2 - PROGRESS: at 67.71% examples, 354354 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:45:24,112 INFO EPOCH 2: training on 621533 raw words (581486 effective words) took 1.7s, 352276 effective words/s
+2026-11-02 15:45:25,120 INFO EPOCH 3 - PROGRESS: at 67.71% examples, 354840 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:45:25,779 INFO EPOCH 3: training on 621533 raw words (581616 effective words) took 1.7s, 349045 effective words/s
+2026-11-02 15:45:26,789 INFO EPOCH 4 - PROGRESS: at 67.71% examples, 354475 words/s, in_qsize 1, out_qsize 0
+2026-11-02 15:45:27,421 INFO EPOCH 4: training on 621533 raw words (581552 effective words) took 1.6s, 354369 effective words/s
+2026-11-02 15:45:27,422 INFO FastText lifecycle event {'msg': 'training on 3107665 raw words (2907787 effective words) took 8.3s, 350174 effective words/s', 'datetime': '2026-11-02T15:45:27.422240', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'train'}
+2026-11-02 15:45:27,544 INFO FastText lifecycle event {'params': 'FastText<vocab=29027, vector_size=100, alpha=0.025>', 'datetime': '2026-11-02T15:45:27.544078', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'created'}
+2026-11-02 15:45:27,544 INFO FastText lifecycle event {'fname_or_handle': '/Users/zym/course/llm/hw2/models/ft_window3.gensim', 'separately': '[]', 'sep_limit': 10485760, 'ignore': frozenset(), 'datetime': '2026-11-02T15:45:27.544464', 'gensim': '4.3.3', 'python': '3.10.18 | packaged by conda-forge | (main, Jun  4 2025, 14:46:00) [Clang 18.1.8 ]', 'platform': 'macOS-26.5.2-arm64-arm-64bit', 'event': 'saving'}
+2026-11-02 15:45:27,544 INFO not storing attribute buckets_word
+2026-11-02 15:45:27,544 INFO not storing attribute vectors
+2026-11-02 15:45:27,544 INFO not storing attribute cum_table
+2026-11-02 15:45:27,557 INFO saved /Users/zym/course/llm/hw2/models/ft_window3.gensim

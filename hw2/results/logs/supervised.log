@@ -1,0 +1,6 @@
+official 2class wordNgrams1: valid F1=0.9576, test F1=0.9213
+official 2class wordNgrams2: valid F1=0.9117, test F1=0.8732
+official 3class wordNgrams1: valid F1=0.9300, test F1=0.9069
+official 3class wordNgrams2: valid F1=0.9452, test F1=0.8706
+official 4class wordNgrams1: valid F1=0.8666, test F1=0.7623
+official 4class wordNgrams2: valid F1=0.8228, test F1=0.6823

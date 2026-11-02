@@ -1,0 +1,2592 @@
+{
+  "tfidf": {
+    "2class": {
+      "C": 0.1,
+      "valid_macro_f1": 0.9715045592705167,
+      "test_accuracy": 0.9368421052631579,
+      "test_macro_f1": 0.932909604519774,
+      "confusion_matrix": [
+        [
+          56,
+          0
+        ],
+        [
+          6,
+          33
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.9032258064516129,
+          "recall": 1.0,
+          "f1-score": 0.9491525423728814,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 1.0,
+          "recall": 0.8461538461538461,
+          "f1-score": 0.9166666666666666,
+          "support": 39.0
+        },
+        "accuracy": 0.9368421052631579,
+        "macro avg": {
+          "precision": 0.9516129032258065,
+          "recall": 0.9230769230769231,
+          "f1-score": 0.932909604519774,
+          "support": 95.0
+        },
+        "weighted avg": {
+          "precision": 0.9429541595925297,
+          "recall": 0.9368421052631579,
+          "f1-score": 0.9358162355040143,
+          "support": 95.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports"
+      ],
+      "split_sizes": {
+        "train": 212,
+        "valid": 75,
+        "test": 95
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.9715045592705167,
+          "iterations": 6
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.9715045592705167,
+          "iterations": 12
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.9715045592705167,
+          "iterations": 17
+        }
+      ],
+      "classifier_seconds": 0.017282709013670683,
+      "feature_seconds": 0.21130233304575086
+    },
+    "3class": {
+      "C": 1.0,
+      "valid_macro_f1": 0.9773364228180513,
+      "test_accuracy": 0.9216867469879518,
+      "test_macro_f1": 0.9213075838185804,
+      "confusion_matrix": [
+        [
+          49,
+          0,
+          7
+        ],
+        [
+          3,
+          34,
+          2
+        ],
+        [
+          1,
+          0,
+          70
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.9245283018867925,
+          "recall": 0.875,
+          "f1-score": 0.8990825688073395,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 1.0,
+          "recall": 0.8717948717948718,
+          "f1-score": 0.9315068493150684,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.8860759493670886,
+          "recall": 0.9859154929577465,
+          "f1-score": 0.9333333333333333,
+          "support": 71.0
+        },
+        "accuracy": 0.9216867469879518,
+        "macro avg": {
+          "precision": 0.9368680837512936,
+          "recall": 0.9109034549175394,
+          "f1-score": 0.9213075838185804,
+          "support": 166.0
+        },
+        "weighted avg": {
+          "precision": 0.9258131163296607,
+          "recall": 0.9216867469879518,
+          "f1-score": 0.9213497448383455,
+          "support": 166.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports",
+        "economy"
+      ],
+      "split_sizes": {
+        "train": 346,
+        "valid": 129,
+        "test": 166
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.968223127913241,
+          "iterations": 7
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.9773364228180513,
+          "iterations": 18
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.9773364228180513,
+          "iterations": 20
+        }
+      ],
+      "classifier_seconds": 0.05859362496994436,
+      "feature_seconds": 0.21130233304575086
+    },
+    "4class": {
+      "C": 0.1,
+      "valid_macro_f1": 0.906751498799276,
+      "test_accuracy": 0.8544600938967136,
+      "test_macro_f1": 0.8598716699637647,
+      "confusion_matrix": [
+        [
+          51,
+          0,
+          3,
+          2
+        ],
+        [
+          2,
+          34,
+          1,
+          2
+        ],
+        [
+          0,
+          0,
+          61,
+          10
+        ],
+        [
+          0,
+          0,
+          11,
+          36
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.9622641509433962,
+          "recall": 0.9107142857142857,
+          "f1-score": 0.9357798165137615,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 1.0,
+          "recall": 0.8717948717948718,
+          "f1-score": 0.9315068493150684,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.8026315789473685,
+          "recall": 0.8591549295774648,
+          "f1-score": 0.8299319727891157,
+          "support": 71.0
+        },
+        "education": {
+          "precision": 0.72,
+          "recall": 0.7659574468085106,
+          "f1-score": 0.7422680412371134,
+          "support": 47.0
+        },
+        "accuracy": 0.8544600938967136,
+        "macro avg": {
+          "precision": 0.8712239324726911,
+          "recall": 0.8519053834737831,
+          "f1-score": 0.8598716699637647,
+          "support": 213.0
+        },
+        "weighted avg": {
+          "precision": 0.8625053265638186,
+          "recall": 0.8544600938967136,
+          "f1-score": 0.8570150462639899,
+          "support": 213.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports",
+        "economy",
+        "education"
+      ],
+      "split_sizes": {
+        "train": 486,
+        "valid": 166,
+        "test": 213
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.906751498799276,
+          "iterations": 9
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.8909013098784697,
+          "iterations": 20
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.8851373203986268,
+          "iterations": 25
+        }
+      ],
+      "classifier_seconds": 0.07304008293431252,
+      "feature_seconds": 0.21130233304575086
+    }
+  },
+  "lsi": {
+    "2class": {
+      "C": 0.1,
+      "valid_macro_f1": 0.9858517260894171,
+      "test_accuracy": 0.9789473684210527,
+      "test_macro_f1": 0.9780701754385965,
+      "confusion_matrix": [
+        [
+          56,
+          0
+        ],
+        [
+          2,
+          37
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.9655172413793104,
+          "recall": 1.0,
+          "f1-score": 0.9824561403508771,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 1.0,
+          "recall": 0.9487179487179487,
+          "f1-score": 0.9736842105263158,
+          "support": 39.0
+        },
+        "accuracy": 0.9789473684210527,
+        "macro avg": {
+          "precision": 0.9827586206896552,
+          "recall": 0.9743589743589743,
+          "f1-score": 0.9780701754385965,
+          "support": 95.0
+        },
+        "weighted avg": {
+          "precision": 0.9796733212341198,
+          "recall": 0.9789473684210527,
+          "f1-score": 0.9788550323176362,
+          "support": 95.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports"
+      ],
+      "split_sizes": {
+        "train": 212,
+        "valid": 75,
+        "test": 95
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.9858517260894171,
+          "iterations": 6
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.9858517260894171,
+          "iterations": 12
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.9858517260894171,
+          "iterations": 15
+        }
+      ],
+      "classifier_seconds": 0.007579333032481372,
+      "feature_seconds": 0.23389249993488193
+    },
+    "3class": {
+      "C": 0.1,
+      "valid_macro_f1": 0.9773364228180513,
+      "test_accuracy": 0.9156626506024096,
+      "test_macro_f1": 0.9170600385553657,
+      "confusion_matrix": [
+        [
+          48,
+          0,
+          8
+        ],
+        [
+          2,
+          36,
+          1
+        ],
+        [
+          1,
+          2,
+          68
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.9411764705882353,
+          "recall": 0.8571428571428571,
+          "f1-score": 0.897196261682243,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.9473684210526315,
+          "recall": 0.9230769230769231,
+          "f1-score": 0.935064935064935,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.8831168831168831,
+          "recall": 0.9577464788732394,
+          "f1-score": 0.918918918918919,
+          "support": 71.0
+        },
+        "accuracy": 0.9156626506024096,
+        "macro avg": {
+          "precision": 0.9238872582525833,
+          "recall": 0.9126554196976732,
+          "f1-score": 0.9170600385553657,
+          "support": 166.0
+        },
+        "weighted avg": {
+          "precision": 0.9177984908150152,
+          "recall": 0.9156626506024096,
+          "f1-score": 0.9153841347288032,
+          "support": 166.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports",
+        "economy"
+      ],
+      "split_sizes": {
+        "train": 346,
+        "valid": 129,
+        "test": 166
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.9773364228180513,
+          "iterations": 8
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.9597040188476407,
+          "iterations": 14
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.9684556218131536,
+          "iterations": 22
+        }
+      ],
+      "classifier_seconds": 0.010378042003139853,
+      "feature_seconds": 0.23389249993488193
+    },
+    "4class": {
+      "C": 1.0,
+      "valid_macro_f1": 0.9018557856239344,
+      "test_accuracy": 0.8356807511737089,
+      "test_macro_f1": 0.8447196693675567,
+      "confusion_matrix": [
+        [
+          47,
+          0,
+          6,
+          3
+        ],
+        [
+          2,
+          34,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          57,
+          13
+        ],
+        [
+          0,
+          0,
+          7,
+          40
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.9591836734693877,
+          "recall": 0.8392857142857143,
+          "f1-score": 0.8952380952380953,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.9714285714285714,
+          "recall": 0.8717948717948718,
+          "f1-score": 0.918918918918919,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.8028169014084507,
+          "recall": 0.8028169014084507,
+          "f1-score": 0.8028169014084507,
+          "support": 71.0
+        },
+        "education": {
+          "precision": 0.6896551724137931,
+          "recall": 0.851063829787234,
+          "f1-score": 0.7619047619047619,
+          "support": 47.0
+        },
+        "accuracy": 0.8356807511737089,
+        "macro avg": {
+          "precision": 0.8557710796800507,
+          "recall": 0.8412403293190677,
+          "f1-score": 0.8447196693675567,
+          "support": 213.0
+        },
+        "weighted avg": {
+          "precision": 0.8498300145701797,
+          "recall": 0.8356807511737089,
+          "f1-score": 0.8393459858248591,
+          "support": 213.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports",
+        "economy",
+        "education"
+      ],
+      "split_sizes": {
+        "train": 486,
+        "valid": 166,
+        "test": 213
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.889687105148292,
+          "iterations": 10
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.9018557856239344,
+          "iterations": 24
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.900459893801682,
+          "iterations": 39
+        }
+      ],
+      "classifier_seconds": 0.014947291929274797,
+      "feature_seconds": 0.23389249993488193
+    }
+  },
+  "w2v_cbow": {
+    "2class": {
+      "C": 10.0,
+      "valid_macro_f1": 0.8647186147186148,
+      "test_accuracy": 0.7473684210526316,
+      "test_macro_f1": 0.740909090909091,
+      "confusion_matrix": [
+        [
+          43,
+          13
+        ],
+        [
+          11,
+          28
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.7962962962962963,
+          "recall": 0.7678571428571429,
+          "f1-score": 0.7818181818181819,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.6829268292682927,
+          "recall": 0.717948717948718,
+          "f1-score": 0.7,
+          "support": 39.0
+        },
+        "accuracy": 0.7473684210526316,
+        "macro avg": {
+          "precision": 0.7396115627822946,
+          "recall": 0.7429029304029304,
+          "f1-score": 0.740909090909091,
+          "support": 95.0
+        },
+        "weighted avg": {
+          "precision": 0.7497551466742739,
+          "recall": 0.7473684210526316,
+          "f1-score": 0.7482296650717702,
+          "support": 95.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports"
+      ],
+      "split_sizes": {
+        "train": 212,
+        "valid": 75,
+        "test": 95
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.7963800904977376,
+          "iterations": 4
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.7835497835497836,
+          "iterations": 5
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.8647186147186148,
+          "iterations": 21
+        }
+      ],
+      "classifier_seconds": 0.008166042040102184,
+      "feature_seconds": 0.4336437080055475
+    },
+    "3class": {
+      "C": 10.0,
+      "valid_macro_f1": 0.7601102961258704,
+      "test_accuracy": 0.6987951807228916,
+      "test_macro_f1": 0.6860768645883027,
+      "confusion_matrix": [
+        [
+          42,
+          10,
+          4
+        ],
+        [
+          11,
+          25,
+          3
+        ],
+        [
+          9,
+          13,
+          49
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.6774193548387096,
+          "recall": 0.75,
+          "f1-score": 0.711864406779661,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.5208333333333334,
+          "recall": 0.6410256410256411,
+          "f1-score": 0.5747126436781609,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.875,
+          "recall": 0.6901408450704225,
+          "f1-score": 0.7716535433070866,
+          "support": 71.0
+        },
+        "accuracy": 0.6987951807228916,
+        "macro avg": {
+          "precision": 0.691084229390681,
+          "recall": 0.6937221620320212,
+          "f1-score": 0.6860768645883027,
+          "support": 166.0
+        },
+        "weighted avg": {
+          "precision": 0.7251384570540226,
+          "recall": 0.6987951807228916,
+          "f1-score": 0.7052144666139304,
+          "support": 166.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports",
+        "economy"
+      ],
+      "split_sizes": {
+        "train": 346,
+        "valid": 129,
+        "test": 166
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.612280701754386,
+          "iterations": 8
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.6962982929020666,
+          "iterations": 22
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.7601102961258704,
+          "iterations": 39
+        }
+      ],
+      "classifier_seconds": 0.013086666003800929,
+      "feature_seconds": 0.4336437080055475
+    },
+    "4class": {
+      "C": 10.0,
+      "valid_macro_f1": 0.6058966136941996,
+      "test_accuracy": 0.5586854460093896,
+      "test_macro_f1": 0.5356549699604122,
+      "confusion_matrix": [
+        [
+          43,
+          8,
+          4,
+          1
+        ],
+        [
+          11,
+          16,
+          3,
+          9
+        ],
+        [
+          10,
+          5,
+          40,
+          16
+        ],
+        [
+          10,
+          8,
+          9,
+          20
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.581081081081081,
+          "recall": 0.7678571428571429,
+          "f1-score": 0.6615384615384615,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.43243243243243246,
+          "recall": 0.41025641025641024,
+          "f1-score": 0.42105263157894735,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.7142857142857143,
+          "recall": 0.5633802816901409,
+          "f1-score": 0.6299212598425197,
+          "support": 71.0
+        },
+        "education": {
+          "precision": 0.43478260869565216,
+          "recall": 0.425531914893617,
+          "f1-score": 0.43010752688172044,
+          "support": 47.0
+        },
+        "accuracy": 0.5586854460093896,
+        "macro avg": {
+          "precision": 0.5406454591237201,
+          "recall": 0.5417564374243278,
+          "f1-score": 0.5356549699604122,
+          "support": 213.0
+        },
+        "weighted avg": {
+          "precision": 0.5659834447342101,
+          "recall": 0.5586854460093896,
+          "f1-score": 0.5558998576994956,
+          "support": 213.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports",
+        "economy",
+        "education"
+      ],
+      "split_sizes": {
+        "train": 486,
+        "valid": 166,
+        "test": 213
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.43772191306273106,
+          "iterations": 7
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.5255721560069385,
+          "iterations": 18
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.6058966136941996,
+          "iterations": 68
+        }
+      ],
+      "classifier_seconds": 0.017186291981488466,
+      "feature_seconds": 0.4336437080055475
+    }
+  },
+  "w2v_sg": {
+    "2class": {
+      "C": 10.0,
+      "valid_macro_f1": 0.9437781109445278,
+      "test_accuracy": 0.8315789473684211,
+      "test_macro_f1": 0.8300536672629696,
+      "confusion_matrix": [
+        [
+          44,
+          12
+        ],
+        [
+          4,
+          35
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.9166666666666666,
+          "recall": 0.7857142857142857,
+          "f1-score": 0.8461538461538461,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.7446808510638298,
+          "recall": 0.8974358974358975,
+          "f1-score": 0.813953488372093,
+          "support": 39.0
+        },
+        "accuracy": 0.8315789473684211,
+        "macro avg": {
+          "precision": 0.8306737588652482,
+          "recall": 0.8415750915750916,
+          "f1-score": 0.8300536672629696,
+          "support": 95.0
+        },
+        "weighted avg": {
+          "precision": 0.8460619634191862,
+          "recall": 0.8315789473684211,
+          "f1-score": 0.8329347519066002,
+          "support": 95.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports"
+      ],
+      "split_sizes": {
+        "train": 212,
+        "valid": 75,
+        "test": 95
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.9022164276401565,
+          "iterations": 4
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.9022164276401565,
+          "iterations": 8
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.9437781109445278,
+          "iterations": 15
+        }
+      ],
+      "classifier_seconds": 0.007740416098386049,
+      "feature_seconds": 0.43474041705485433
+    },
+    "3class": {
+      "C": 10.0,
+      "valid_macro_f1": 0.9188980251598847,
+      "test_accuracy": 0.7710843373493976,
+      "test_macro_f1": 0.7644542232000978,
+      "confusion_matrix": [
+        [
+          41,
+          9,
+          6
+        ],
+        [
+          4,
+          32,
+          3
+        ],
+        [
+          0,
+          16,
+          55
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.9111111111111111,
+          "recall": 0.7321428571428571,
+          "f1-score": 0.8118811881188119,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.5614035087719298,
+          "recall": 0.8205128205128205,
+          "f1-score": 0.6666666666666666,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.859375,
+          "recall": 0.7746478873239436,
+          "f1-score": 0.8148148148148148,
+          "support": 71.0
+        },
+        "accuracy": 0.7710843373493976,
+        "macro avg": {
+          "precision": 0.7772965399610136,
+          "recall": 0.775767854993207,
+          "f1-score": 0.7644542232000978,
+          "support": 166.0
+        },
+        "weighted avg": {
+          "precision": 0.8068227955682378,
+          "recall": 0.7710843373493976,
+          "f1-score": 0.7790192673885862,
+          "support": 166.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports",
+        "economy"
+      ],
+      "split_sizes": {
+        "train": 346,
+        "valid": 129,
+        "test": 166
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.8491611698442818,
+          "iterations": 10
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.8603756914952361,
+          "iterations": 15
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.9188980251598847,
+          "iterations": 36
+        }
+      ],
+      "classifier_seconds": 0.011986541911028326,
+      "feature_seconds": 0.43474041705485433
+    },
+    "4class": {
+      "C": 10.0,
+      "valid_macro_f1": 0.7330221978194368,
+      "test_accuracy": 0.6901408450704225,
+      "test_macro_f1": 0.6907185163764111,
+      "confusion_matrix": [
+        [
+          43,
+          6,
+          6,
+          1
+        ],
+        [
+          4,
+          27,
+          1,
+          7
+        ],
+        [
+          0,
+          5,
+          45,
+          21
+        ],
+        [
+          1,
+          4,
+          10,
+          32
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.8958333333333334,
+          "recall": 0.7678571428571429,
+          "f1-score": 0.8269230769230769,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.6428571428571429,
+          "recall": 0.6923076923076923,
+          "f1-score": 0.6666666666666666,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.7258064516129032,
+          "recall": 0.6338028169014085,
+          "f1-score": 0.6766917293233082,
+          "support": 71.0
+        },
+        "education": {
+          "precision": 0.5245901639344263,
+          "recall": 0.6808510638297872,
+          "f1-score": 0.5925925925925926,
+          "support": 47.0
+        },
+        "accuracy": 0.6901408450704225,
+        "macro avg": {
+          "precision": 0.6972717729344514,
+          "recall": 0.6937046789740078,
+          "f1-score": 0.6907185163764111,
+          "support": 213.0
+        },
+        "weighted avg": {
+          "precision": 0.7109206150588235,
+          "recall": 0.6901408450704225,
+          "f1-score": 0.6957965114624368,
+          "support": 213.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports",
+        "economy",
+        "education"
+      ],
+      "split_sizes": {
+        "train": 486,
+        "valid": 166,
+        "test": 213
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.6630995121053116,
+          "iterations": 10
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.7185153996873831,
+          "iterations": 20
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.7330221978194368,
+          "iterations": 56
+        }
+      ],
+      "classifier_seconds": 0.01611716696061194,
+      "feature_seconds": 0.43474041705485433
+    }
+  },
+  "ft_external": {
+    "2class": {
+      "C": 10.0,
+      "valid_macro_f1": 0.9718890554722639,
+      "test_accuracy": 0.8526315789473684,
+      "test_macro_f1": 0.8512969588550985,
+      "confusion_matrix": [
+        [
+          45,
+          11
+        ],
+        [
+          3,
+          36
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.9375,
+          "recall": 0.8035714285714286,
+          "f1-score": 0.8653846153846154,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.7659574468085106,
+          "recall": 0.9230769230769231,
+          "f1-score": 0.8372093023255814,
+          "support": 39.0
+        },
+        "accuracy": 0.8526315789473684,
+        "macro avg": {
+          "precision": 0.8517287234042553,
+          "recall": 0.8633241758241759,
+          "f1-score": 0.8512969588550985,
+          "support": 95.0
+        },
+        "weighted avg": {
+          "precision": 0.8670772676371781,
+          "recall": 0.8526315789473684,
+          "f1-score": 0.8538179079182753,
+          "support": 95.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports"
+      ],
+      "split_sizes": {
+        "train": 212,
+        "valid": 75,
+        "test": 95
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.9575551782682512,
+          "iterations": 4
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.9575551782682512,
+          "iterations": 7
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.9718890554722639,
+          "iterations": 15
+        }
+      ],
+      "classifier_seconds": 0.008197624934837222,
+      "feature_seconds": 0.6146466250065714
+    },
+    "3class": {
+      "C": 10.0,
+      "valid_macro_f1": 0.9256762555688193,
+      "test_accuracy": 0.8313253012048193,
+      "test_macro_f1": 0.82414347522418,
+      "confusion_matrix": [
+        [
+          43,
+          6,
+          7
+        ],
+        [
+          3,
+          34,
+          2
+        ],
+        [
+          0,
+          10,
+          61
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.9347826086956522,
+          "recall": 0.7678571428571429,
+          "f1-score": 0.8431372549019608,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.68,
+          "recall": 0.8717948717948718,
+          "f1-score": 0.7640449438202247,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.8714285714285714,
+          "recall": 0.8591549295774648,
+          "f1-score": 0.8652482269503546,
+          "support": 71.0
+        },
+        "accuracy": 0.8313253012048193,
+        "macro avg": {
+          "precision": 0.828737060041408,
+          "recall": 0.8329356480764932,
+          "f1-score": 0.82414347522418,
+          "support": 166.0
+        },
+        "weighted avg": {
+          "precision": 0.8478268352914765,
+          "recall": 0.8313253012048193,
+          "f1-score": 0.8340124288974322,
+          "support": 166.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports",
+        "economy"
+      ],
+      "split_sizes": {
+        "train": 346,
+        "valid": 129,
+        "test": 166
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.9004168627942337,
+          "iterations": 10
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.8989897291936324,
+          "iterations": 18
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.9256762555688193,
+          "iterations": 25
+        }
+      ],
+      "classifier_seconds": 0.012033208971843123,
+      "feature_seconds": 0.6146466250065714
+    },
+    "4class": {
+      "C": 1.0,
+      "valid_macro_f1": 0.8014590848226485,
+      "test_accuracy": 0.7136150234741784,
+      "test_macro_f1": 0.7094264303771346,
+      "confusion_matrix": [
+        [
+          42,
+          7,
+          6,
+          1
+        ],
+        [
+          3,
+          30,
+          1,
+          5
+        ],
+        [
+          1,
+          3,
+          52,
+          15
+        ],
+        [
+          2,
+          5,
+          12,
+          28
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.875,
+          "recall": 0.75,
+          "f1-score": 0.8076923076923077,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.6666666666666666,
+          "recall": 0.7692307692307693,
+          "f1-score": 0.7142857142857143,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.7323943661971831,
+          "recall": 0.7323943661971831,
+          "f1-score": 0.7323943661971831,
+          "support": 71.0
+        },
+        "education": {
+          "precision": 0.5714285714285714,
+          "recall": 0.5957446808510638,
+          "f1-score": 0.5833333333333334,
+          "support": 47.0
+        },
+        "accuracy": 0.7136150234741784,
+        "macro avg": {
+          "precision": 0.7113724010731053,
+          "recall": 0.711842454069754,
+          "f1-score": 0.7094264303771346,
+          "support": 213.0
+        },
+        "weighted avg": {
+          "precision": 0.7223340040241449,
+          "recall": 0.7136150234741784,
+          "f1-score": 0.7159839378149236,
+          "support": 213.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports",
+        "economy",
+        "education"
+      ],
+      "split_sizes": {
+        "train": 486,
+        "valid": 166,
+        "test": 213
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.7510492821916541,
+          "iterations": 7
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.8014590848226485,
+          "iterations": 19
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.7797581284694687,
+          "iterations": 63
+        }
+      ],
+      "classifier_seconds": 0.016866125050000846,
+      "feature_seconds": 0.6146466250065714
+    }
+  },
+  "ft_3_6": {
+    "2class": {
+      "C": 1.0,
+      "valid_macro_f1": 0.9860309182343081,
+      "test_accuracy": 0.8526315789473684,
+      "test_macro_f1": 0.8518270944741533,
+      "confusion_matrix": [
+        [
+          44,
+          12
+        ],
+        [
+          2,
+          37
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.9565217391304348,
+          "recall": 0.7857142857142857,
+          "f1-score": 0.8627450980392157,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.7551020408163265,
+          "recall": 0.9487179487179487,
+          "f1-score": 0.8409090909090909,
+          "support": 39.0
+        },
+        "accuracy": 0.8526315789473684,
+        "macro avg": {
+          "precision": 0.8558118899733806,
+          "recall": 0.8672161172161172,
+          "f1-score": 0.8518270944741533,
+          "support": 95.0
+        },
+        "weighted avg": {
+          "precision": 0.8738336524541167,
+          "recall": 0.8526315789473684,
+          "f1-score": 0.8537808424805329,
+          "support": 95.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports"
+      ],
+      "split_sizes": {
+        "train": 212,
+        "valid": 75,
+        "test": 95
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.9718890554722639,
+          "iterations": 4
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.9860309182343081,
+          "iterations": 8
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.9718890554722639,
+          "iterations": 13
+        }
+      ],
+      "classifier_seconds": 0.008141750004142523,
+      "feature_seconds": 0.5800789999775589
+    },
+    "3class": {
+      "C": 10.0,
+      "valid_macro_f1": 0.9426941382256032,
+      "test_accuracy": 0.7951807228915663,
+      "test_macro_f1": 0.7867714388164809,
+      "confusion_matrix": [
+        [
+          41,
+          9,
+          6
+        ],
+        [
+          4,
+          33,
+          2
+        ],
+        [
+          1,
+          12,
+          58
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.8913043478260869,
+          "recall": 0.7321428571428571,
+          "f1-score": 0.803921568627451,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.6111111111111112,
+          "recall": 0.8461538461538461,
+          "f1-score": 0.7096774193548387,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.8787878787878788,
+          "recall": 0.8169014084507042,
+          "f1-score": 0.8467153284671532,
+          "support": 71.0
+        },
+        "accuracy": 0.7951807228915663,
+        "macro avg": {
+          "precision": 0.793734445908359,
+          "recall": 0.7983993705824691,
+          "f1-score": 0.7867714388164809,
+          "support": 166.0
+        },
+        "weighted avg": {
+          "precision": 0.8201223867803229,
+          "recall": 0.7951807228915663,
+          "f1-score": 0.8000832260189388,
+          "support": 166.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports",
+        "economy"
+      ],
+      "split_sizes": {
+        "train": 346,
+        "valid": 129,
+        "test": 166
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.9007441744813868,
+          "iterations": 6
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.8993724234145729,
+          "iterations": 8
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.9426941382256032,
+          "iterations": 44
+        }
+      ],
+      "classifier_seconds": 0.012360458029434085,
+      "feature_seconds": 0.5800789999775589
+    },
+    "4class": {
+      "C": 10.0,
+      "valid_macro_f1": 0.7873323891939101,
+      "test_accuracy": 0.6854460093896714,
+      "test_macro_f1": 0.6880533145515857,
+      "confusion_matrix": [
+        [
+          42,
+          5,
+          6,
+          3
+        ],
+        [
+          4,
+          27,
+          1,
+          7
+        ],
+        [
+          1,
+          2,
+          47,
+          21
+        ],
+        [
+          2,
+          3,
+          12,
+          30
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.8571428571428571,
+          "recall": 0.75,
+          "f1-score": 0.8,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.7297297297297297,
+          "recall": 0.6923076923076923,
+          "f1-score": 0.7105263157894737,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.7121212121212122,
+          "recall": 0.6619718309859155,
+          "f1-score": 0.6861313868613139,
+          "support": 71.0
+        },
+        "education": {
+          "precision": 0.4918032786885246,
+          "recall": 0.6382978723404256,
+          "f1-score": 0.5555555555555556,
+          "support": 47.0
+        },
+        "accuracy": 0.6854460093896714,
+        "macro avg": {
+          "precision": 0.6976992694205809,
+          "recall": 0.6856443489085082,
+          "f1-score": 0.6880533145515857,
+          "support": 213.0
+        },
+        "weighted avg": {
+          "precision": 0.7048583080677285,
+          "recall": 0.6854460093896714,
+          "f1-score": 0.6917228445730229,
+          "support": 213.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports",
+        "economy",
+        "education"
+      ],
+      "split_sizes": {
+        "train": 486,
+        "valid": 166,
+        "test": 213
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.7010679027810622,
+          "iterations": 9
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.738313327656262,
+          "iterations": 19
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.7873323891939101,
+          "iterations": 37
+        }
+      ],
+      "classifier_seconds": 0.014763207989744842,
+      "feature_seconds": 0.5800789999775589
+    }
+  },
+  "ft_adapted": {
+    "2class": {
+      "C": 1.0,
+      "valid_macro_f1": 0.9715045592705167,
+      "test_accuracy": 0.8526315789473684,
+      "test_macro_f1": 0.85062893081761,
+      "confusion_matrix": [
+        [
+          46,
+          10
+        ],
+        [
+          4,
+          35
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.92,
+          "recall": 0.8214285714285714,
+          "f1-score": 0.8679245283018868,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.7777777777777778,
+          "recall": 0.8974358974358975,
+          "f1-score": 0.8333333333333334,
+          "support": 39.0
+        },
+        "accuracy": 0.8526315789473684,
+        "macro avg": {
+          "precision": 0.8488888888888889,
+          "recall": 0.8594322344322345,
+          "f1-score": 0.85062893081761,
+          "support": 95.0
+        },
+        "weighted avg": {
+          "precision": 0.8616140350877194,
+          "recall": 0.8526315789473684,
+          "f1-score": 0.8537239324726912,
+          "support": 95.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports"
+      ],
+      "split_sizes": {
+        "train": 212,
+        "valid": 75,
+        "test": 95
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.9292586304470855,
+          "iterations": 5
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.9715045592705167,
+          "iterations": 8
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.9715045592705167,
+          "iterations": 13
+        }
+      ],
+      "classifier_seconds": 0.008302583009935915,
+      "feature_seconds": 0.5832934590289369
+    },
+    "3class": {
+      "C": 10.0,
+      "valid_macro_f1": 0.9551354043240088,
+      "test_accuracy": 0.8373493975903614,
+      "test_macro_f1": 0.8272296270167216,
+      "confusion_matrix": [
+        [
+          43,
+          7,
+          6
+        ],
+        [
+          4,
+          33,
+          2
+        ],
+        [
+          1,
+          7,
+          63
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.8958333333333334,
+          "recall": 0.7678571428571429,
+          "f1-score": 0.8269230769230769,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.7021276595744681,
+          "recall": 0.8461538461538461,
+          "f1-score": 0.7674418604651163,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.8873239436619719,
+          "recall": 0.8873239436619719,
+          "f1-score": 0.8873239436619719,
+          "support": 71.0
+        },
+        "accuracy": 0.8373493975903614,
+        "macro avg": {
+          "precision": 0.8284283121899244,
+          "recall": 0.833778310890987,
+          "f1-score": 0.8272296270167216,
+          "support": 166.0
+        },
+        "weighted avg": {
+          "precision": 0.8466846107835598,
+          "recall": 0.8373493975903614,
+          "f1-score": 0.8387826799146496,
+          "support": 166.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports",
+        "economy"
+      ],
+      "split_sizes": {
+        "train": 346,
+        "valid": 129,
+        "test": 166
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.9311655306490526,
+          "iterations": 9
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.9384752055247584,
+          "iterations": 22
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.9551354043240088,
+          "iterations": 32
+        }
+      ],
+      "classifier_seconds": 0.01240470795892179,
+      "feature_seconds": 0.5832934590289369
+    },
+    "4class": {
+      "C": 10.0,
+      "valid_macro_f1": 0.8203945394539454,
+      "test_accuracy": 0.7089201877934272,
+      "test_macro_f1": 0.7117289829911189,
+      "confusion_matrix": [
+        [
+          42,
+          4,
+          6,
+          4
+        ],
+        [
+          4,
+          28,
+          1,
+          6
+        ],
+        [
+          1,
+          1,
+          51,
+          18
+        ],
+        [
+          0,
+          3,
+          14,
+          30
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.8936170212765957,
+          "recall": 0.75,
+          "f1-score": 0.8155339805825242,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.7777777777777778,
+          "recall": 0.717948717948718,
+          "f1-score": 0.7466666666666667,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.7083333333333334,
+          "recall": 0.7183098591549296,
+          "f1-score": 0.7132867132867133,
+          "support": 71.0
+        },
+        "education": {
+          "precision": 0.5172413793103449,
+          "recall": 0.6382978723404256,
+          "f1-score": 0.5714285714285714,
+          "support": 47.0
+        },
+        "accuracy": 0.7089201877934272,
+        "macro avg": {
+          "precision": 0.724242377924513,
+          "recall": 0.7061391123610183,
+          "f1-score": 0.7117289829911189,
+          "support": 213.0
+        },
+        "weighted avg": {
+          "precision": 0.7275957653477727,
+          "recall": 0.7089201877934272,
+          "f1-score": 0.7149784150850744,
+          "support": 213.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports",
+        "economy",
+        "education"
+      ],
+      "split_sizes": {
+        "train": 486,
+        "valid": 166,
+        "test": 213
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.7483413184525598,
+          "iterations": 11
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.8068142090688819,
+          "iterations": 23
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.8203945394539454,
+          "iterations": 52
+        }
+      ],
+      "classifier_seconds": 0.016615542001090944,
+      "feature_seconds": 0.5832934590289369
+    }
+  },
+  "ft_adapted_idf": {
+    "2class": {
+      "C": 1.0,
+      "valid_macro_f1": 0.9715045592705167,
+      "test_accuracy": 0.8736842105263158,
+      "test_macro_f1": 0.8712737127371273,
+      "confusion_matrix": [
+        [
+          48,
+          8
+        ],
+        [
+          4,
+          35
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.9230769230769231,
+          "recall": 0.8571428571428571,
+          "f1-score": 0.8888888888888888,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.813953488372093,
+          "recall": 0.8974358974358975,
+          "f1-score": 0.8536585365853658,
+          "support": 39.0
+        },
+        "accuracy": 0.8736842105263158,
+        "macro avg": {
+          "precision": 0.868515205724508,
+          "recall": 0.8772893772893773,
+          "f1-score": 0.8712737127371273,
+          "support": 95.0
+        },
+        "weighted avg": {
+          "precision": 0.878278881461256,
+          "recall": 0.8736842105263158,
+          "f1-score": 0.8744259021537581,
+          "support": 95.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports"
+      ],
+      "split_sizes": {
+        "train": 212,
+        "valid": 75,
+        "test": 95
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.9569377990430622,
+          "iterations": 5
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.9715045592705167,
+          "iterations": 8
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.9715045592705167,
+          "iterations": 11
+        }
+      ],
+      "classifier_seconds": 0.007927083992399275,
+      "feature_seconds": 0.29741458292119205
+    },
+    "3class": {
+      "C": 10.0,
+      "valid_macro_f1": 0.9569613689395903,
+      "test_accuracy": 0.8674698795180723,
+      "test_macro_f1": 0.8577841705672177,
+      "confusion_matrix": [
+        [
+          47,
+          5,
+          4
+        ],
+        [
+          4,
+          33,
+          2
+        ],
+        [
+          1,
+          6,
+          64
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.9038461538461539,
+          "recall": 0.8392857142857143,
+          "f1-score": 0.8703703703703703,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.75,
+          "recall": 0.8461538461538461,
+          "f1-score": 0.7951807228915663,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.9142857142857143,
+          "recall": 0.9014084507042254,
+          "f1-score": 0.9078014184397163,
+          "support": 71.0
+        },
+        "accuracy": 0.8674698795180723,
+        "macro avg": {
+          "precision": 0.856043956043956,
+          "recall": 0.8622826703812619,
+          "f1-score": 0.8577841705672177,
+          "support": 166.0
+        },
+        "weighted avg": {
+          "precision": 0.8721666887329538,
+          "recall": 0.8674698795180723,
+          "f1-score": 0.8687149978477812,
+          "support": 166.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports",
+        "economy"
+      ],
+      "split_sizes": {
+        "train": 346,
+        "valid": 129,
+        "test": 166
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.9311655306490526,
+          "iterations": 8
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.9502484807375517,
+          "iterations": 17
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.9569613689395903,
+          "iterations": 30
+        }
+      ],
+      "classifier_seconds": 0.01186287496238947,
+      "feature_seconds": 0.29741458292119205
+    },
+    "4class": {
+      "C": 1.0,
+      "valid_macro_f1": 0.8209212576186876,
+      "test_accuracy": 0.7183098591549296,
+      "test_macro_f1": 0.7192124542124543,
+      "confusion_matrix": [
+        [
+          45,
+          5,
+          4,
+          2
+        ],
+        [
+          4,
+          30,
+          1,
+          4
+        ],
+        [
+          1,
+          1,
+          50,
+          19
+        ],
+        [
+          2,
+          3,
+          14,
+          28
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.8653846153846154,
+          "recall": 0.8035714285714286,
+          "f1-score": 0.8333333333333334,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.7692307692307693,
+          "recall": 0.7692307692307693,
+          "f1-score": 0.7692307692307693,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.7246376811594203,
+          "recall": 0.704225352112676,
+          "f1-score": 0.7142857142857143,
+          "support": 71.0
+        },
+        "education": {
+          "precision": 0.5283018867924528,
+          "recall": 0.5957446808510638,
+          "f1-score": 0.56,
+          "support": 47.0
+        },
+        "accuracy": 0.7183098591549296,
+        "macro avg": {
+          "precision": 0.7218887381418144,
+          "recall": 0.7181930576914844,
+          "f1-score": 0.7192124542124543,
+          "support": 213.0
+        },
+        "weighted avg": {
+          "precision": 0.7264835798267728,
+          "recall": 0.7183098591549296,
+          "f1-score": 0.7216007154035322,
+          "support": 213.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports",
+        "economy",
+        "education"
+      ],
+      "split_sizes": {
+        "train": 486,
+        "valid": 166,
+        "test": 213
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.7568156936529651,
+          "iterations": 11
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.8209212576186876,
+          "iterations": 22
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.8193288741212674,
+          "iterations": 42
+        }
+      ],
+      "classifier_seconds": 0.01571845798753202,
+      "feature_seconds": 0.29741458292119205
+    }
+  },
+  "ft_dim50": {
+    "2class": {
+      "C": 1.0,
+      "valid_macro_f1": 0.9715045592705167,
+      "test_accuracy": 0.8526315789473684,
+      "test_macro_f1": 0.85062893081761,
+      "confusion_matrix": [
+        [
+          46,
+          10
+        ],
+        [
+          4,
+          35
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.92,
+          "recall": 0.8214285714285714,
+          "f1-score": 0.8679245283018868,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.7777777777777778,
+          "recall": 0.8974358974358975,
+          "f1-score": 0.8333333333333334,
+          "support": 39.0
+        },
+        "accuracy": 0.8526315789473684,
+        "macro avg": {
+          "precision": 0.8488888888888889,
+          "recall": 0.8594322344322345,
+          "f1-score": 0.85062893081761,
+          "support": 95.0
+        },
+        "weighted avg": {
+          "precision": 0.8616140350877194,
+          "recall": 0.8526315789473684,
+          "f1-score": 0.8537239324726912,
+          "support": 95.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports"
+      ],
+      "split_sizes": {
+        "train": 212,
+        "valid": 75,
+        "test": 95
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.9292586304470855,
+          "iterations": 5
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.9715045592705167,
+          "iterations": 8
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.9715045592705167,
+          "iterations": 13
+        }
+      ],
+      "classifier_seconds": 0.007955959066748619,
+      "feature_seconds": 0.5706007919507101
+    },
+    "3class": {
+      "C": 10.0,
+      "valid_macro_f1": 0.9569613689395903,
+      "test_accuracy": 0.8373493975903614,
+      "test_macro_f1": 0.8272296270167216,
+      "confusion_matrix": [
+        [
+          43,
+          7,
+          6
+        ],
+        [
+          4,
+          33,
+          2
+        ],
+        [
+          1,
+          7,
+          63
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.8958333333333334,
+          "recall": 0.7678571428571429,
+          "f1-score": 0.8269230769230769,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.7021276595744681,
+          "recall": 0.8461538461538461,
+          "f1-score": 0.7674418604651163,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.8873239436619719,
+          "recall": 0.8873239436619719,
+          "f1-score": 0.8873239436619719,
+          "support": 71.0
+        },
+        "accuracy": 0.8373493975903614,
+        "macro avg": {
+          "precision": 0.8284283121899244,
+          "recall": 0.833778310890987,
+          "f1-score": 0.8272296270167216,
+          "support": 166.0
+        },
+        "weighted avg": {
+          "precision": 0.8466846107835598,
+          "recall": 0.8373493975903614,
+          "f1-score": 0.8387826799146496,
+          "support": 166.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports",
+        "economy"
+      ],
+      "split_sizes": {
+        "train": 346,
+        "valid": 129,
+        "test": 166
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.9311655306490526,
+          "iterations": 8
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.9384752055247584,
+          "iterations": 20
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.9569613689395903,
+          "iterations": 32
+        }
+      ],
+      "classifier_seconds": 0.011134042055346072,
+      "feature_seconds": 0.5706007919507101
+    },
+    "4class": {
+      "C": 10.0,
+      "valid_macro_f1": 0.8197538161606106,
+      "test_accuracy": 0.7183098591549296,
+      "test_macro_f1": 0.7231575544196903,
+      "confusion_matrix": [
+        [
+          42,
+          4,
+          6,
+          4
+        ],
+        [
+          4,
+          29,
+          1,
+          5
+        ],
+        [
+          1,
+          1,
+          51,
+          18
+        ],
+        [
+          0,
+          2,
+          14,
+          31
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.8936170212765957,
+          "recall": 0.75,
+          "f1-score": 0.8155339805825242,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.8055555555555556,
+          "recall": 0.7435897435897436,
+          "f1-score": 0.7733333333333333,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.7083333333333334,
+          "recall": 0.7183098591549296,
+          "f1-score": 0.7132867132867133,
+          "support": 71.0
+        },
+        "education": {
+          "precision": 0.5344827586206896,
+          "recall": 0.6595744680851063,
+          "f1-score": 0.5904761904761905,
+          "support": 47.0
+        },
+        "accuracy": 0.7183098591549296,
+        "macro avg": {
+          "precision": 0.7354971671965436,
+          "recall": 0.7178685177074449,
+          "f1-score": 0.7231575544196903,
+          "support": 213.0
+        },
+        "weighted avg": {
+          "precision": 0.736486273145517,
+          "recall": 0.7183098591549296,
+          "f1-score": 0.7240640399453473,
+          "support": 213.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports",
+        "economy",
+        "education"
+      ],
+      "split_sizes": {
+        "train": 486,
+        "valid": 166,
+        "test": 213
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.7381878745934045,
+          "iterations": 11
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.8050142272689002,
+          "iterations": 21
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.8197538161606106,
+          "iterations": 66
+        }
+      ],
+      "classifier_seconds": 0.014982166001573205,
+      "feature_seconds": 0.5706007919507101
+    }
+  },
+  "ft_window3": {
+    "2class": {
+      "C": 10.0,
+      "valid_macro_f1": 0.9437781109445278,
+      "test_accuracy": 0.8421052631578947,
+      "test_macro_f1": 0.8403361344537814,
+      "confusion_matrix": [
+        [
+          45,
+          11
+        ],
+        [
+          4,
+          35
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.9183673469387755,
+          "recall": 0.8035714285714286,
+          "f1-score": 0.8571428571428571,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.7608695652173914,
+          "recall": 0.8974358974358975,
+          "f1-score": 0.8235294117647058,
+          "support": 39.0
+        },
+        "accuracy": 0.8421052631578947,
+        "macro avg": {
+          "precision": 0.8396184560780835,
+          "recall": 0.8505036630036631,
+          "f1-score": 0.8403361344537814,
+          "support": 95.0
+        },
+        "weighted avg": {
+          "precision": 0.853710362863681,
+          "recall": 0.8421052631578947,
+          "f1-score": 0.8433436532507741,
+          "support": 95.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports"
+      ],
+      "split_sizes": {
+        "train": 212,
+        "valid": 75,
+        "test": 95
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.9022164276401565,
+          "iterations": 5
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.9022164276401565,
+          "iterations": 8
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.9437781109445278,
+          "iterations": 17
+        }
+      ],
+      "classifier_seconds": 0.008697542012669146,
+      "feature_seconds": 0.5838257089490071
+    },
+    "3class": {
+      "C": 10.0,
+      "valid_macro_f1": 0.9220204210716544,
+      "test_accuracy": 0.8132530120481928,
+      "test_macro_f1": 0.8026849782685354,
+      "confusion_matrix": [
+        [
+          42,
+          8,
+          6
+        ],
+        [
+          4,
+          32,
+          3
+        ],
+        [
+          1,
+          9,
+          61
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.8936170212765957,
+          "recall": 0.75,
+          "f1-score": 0.8155339805825242,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.6530612244897959,
+          "recall": 0.8205128205128205,
+          "f1-score": 0.7272727272727273,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.8714285714285714,
+          "recall": 0.8591549295774648,
+          "f1-score": 0.8652482269503546,
+          "support": 71.0
+        },
+        "accuracy": 0.8132530120481928,
+        "macro avg": {
+          "precision": 0.8060356057316543,
+          "recall": 0.809889250030095,
+          "f1-score": 0.8026849782685354,
+          "support": 166.0
+        },
+        "weighted avg": {
+          "precision": 0.8276106597471082,
+          "recall": 0.8132530120481928,
+          "f1-score": 0.8160612252393549,
+          "support": 166.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports",
+        "economy"
+      ],
+      "split_sizes": {
+        "train": 346,
+        "valid": 129,
+        "test": 166
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.9052666594742331,
+          "iterations": 10
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.8974060896813113,
+          "iterations": 21
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.9220204210716544,
+          "iterations": 34
+        }
+      ],
+      "classifier_seconds": 0.012806041981093585,
+      "feature_seconds": 0.5838257089490071
+    },
+    "4class": {
+      "C": 10.0,
+      "valid_macro_f1": 0.8058881693523254,
+      "test_accuracy": 0.704225352112676,
+      "test_macro_f1": 0.7053434836453705,
+      "confusion_matrix": [
+        [
+          43,
+          3,
+          6,
+          4
+        ],
+        [
+          5,
+          27,
+          1,
+          6
+        ],
+        [
+          1,
+          1,
+          50,
+          19
+        ],
+        [
+          1,
+          4,
+          12,
+          30
+        ]
+      ],
+      "classification_report": {
+        "international": {
+          "precision": 0.86,
+          "recall": 0.7678571428571429,
+          "f1-score": 0.8113207547169812,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.7714285714285715,
+          "recall": 0.6923076923076923,
+          "f1-score": 0.7297297297297297,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.7246376811594203,
+          "recall": 0.704225352112676,
+          "f1-score": 0.7142857142857143,
+          "support": 71.0
+        },
+        "education": {
+          "precision": 0.5084745762711864,
+          "recall": 0.6382978723404256,
+          "f1-score": 0.5660377358490566,
+          "support": 47.0
+        },
+        "accuracy": 0.704225352112676,
+        "macro avg": {
+          "precision": 0.7161352072147945,
+          "recall": 0.7006720149044843,
+          "f1-score": 0.7053434836453705,
+          "support": 213.0
+        },
+        "weighted avg": {
+          "precision": 0.7210952804355817,
+          "recall": 0.704225352112676,
+          "f1-score": 0.7099130564450788,
+          "support": 213.0
+        }
+      },
+      "labels": [
+        "international",
+        "sports",
+        "economy",
+        "education"
+      ],
+      "split_sizes": {
+        "train": 486,
+        "valid": 166,
+        "test": 213
+      },
+      "validation_trials": [
+        {
+          "C": 0.1,
+          "valid_macro_f1": 0.7184552482732054,
+          "iterations": 10
+        },
+        {
+          "C": 1.0,
+          "valid_macro_f1": 0.7766155567266249,
+          "iterations": 18
+        },
+        {
+          "C": 10.0,
+          "valid_macro_f1": 0.8058881693523254,
+          "iterations": 56
+        }
+      ],
+      "classifier_seconds": 0.016343292081728578,
+      "feature_seconds": 0.5838257089490071
+    }
+  }
+}

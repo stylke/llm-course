@@ -1,0 +1,13 @@
+test_normalization_and_pronunciation (test_hw2.PreprocessTests) ... ok
+test_segmented_picture_annotation (test_hw2.PreprocessTests) ... ok
+test_sentence_boundary (test_hw2.PreprocessTests) ... ok
+test_source_matches_saved_preprocessing (test_hw2.PreprocessTests) ... ok
+test_split_disjointness (test_hw2.PreprocessTests) ... ok
+test_fasttext_oov_and_saved_vectors (test_hw2.VectorTests) ... ok
+test_hash_stability (test_hw2.VectorTests) ... ok
+test_word2vec_all_oov_document (test_hw2.VectorTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.286s
+
+OK

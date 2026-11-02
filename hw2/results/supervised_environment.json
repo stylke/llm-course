@@ -1,0 +1,20 @@
+{
+  "version": "0.9.3",
+  "parameters": {
+    "dim": 100,
+    "epoch": 25,
+    "minCount": 1,
+    "minn": 0,
+    "maxn": 0,
+    "loss": "softmax",
+    "bucket": 50000,
+    "thread": 1,
+    "seed": 2026,
+    "verbose": 0
+  },
+  "lr_grid": [
+    0.1,
+    0.5
+  ],
+  "notes": "January training data only; embeddings and classifier jointly trained. Softmax is used because there are only 2-4 labels. No class reweighting."
+}

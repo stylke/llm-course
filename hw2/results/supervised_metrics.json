@@ -1,0 +1,558 @@
+{
+  "2class": {
+    "wordNgrams1": {
+      "parameters": {
+        "dim": 100,
+        "epoch": 25,
+        "minCount": 1,
+        "minn": 0,
+        "maxn": 0,
+        "loss": "softmax",
+        "bucket": 50000,
+        "thread": 1,
+        "seed": 2026,
+        "verbose": 0,
+        "lr": 0.5,
+        "wordNgrams": 1
+      },
+      "valid_macro_f1": 0.9575551782682512,
+      "validation_trials": [
+        {
+          "lr": 0.1,
+          "valid_macro_f1": 0.38016528925619836
+        },
+        {
+          "lr": 0.5,
+          "valid_macro_f1": 0.9575551782682512
+        }
+      ],
+      "test_accuracy": 0.9263157894736842,
+      "test_macro_f1": 0.9212924606462303,
+      "classification_report": {
+        "international": {
+          "precision": 0.8888888888888888,
+          "recall": 1.0,
+          "f1-score": 0.9411764705882353,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 1.0,
+          "recall": 0.8205128205128205,
+          "f1-score": 0.9014084507042254,
+          "support": 39.0
+        },
+        "accuracy": 0.9263157894736842,
+        "macro avg": {
+          "precision": 0.9444444444444444,
+          "recall": 0.9102564102564102,
+          "f1-score": 0.9212924606462303,
+          "support": 95.0
+        },
+        "weighted avg": {
+          "precision": 0.9345029239766082,
+          "recall": 0.9263157894736842,
+          "f1-score": 0.9248506518990101,
+          "support": 95.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          56,
+          0
+        ],
+        [
+          7,
+          32
+        ]
+      ],
+      "labels": [
+        "international",
+        "sports"
+      ],
+      "seconds_for_two_trials": 0.1664023749763146,
+      "model_bytes": 3432427,
+      "split_sizes": {
+        "train": 212,
+        "valid": 75,
+        "test": 95
+      }
+    },
+    "wordNgrams2": {
+      "parameters": {
+        "dim": 100,
+        "epoch": 25,
+        "minCount": 1,
+        "minn": 0,
+        "maxn": 0,
+        "loss": "softmax",
+        "bucket": 50000,
+        "thread": 1,
+        "seed": 2026,
+        "verbose": 0,
+        "lr": 0.5,
+        "wordNgrams": 2
+      },
+      "valid_macro_f1": 0.9116954474097332,
+      "validation_trials": [
+        {
+          "lr": 0.1,
+          "valid_macro_f1": 0.38016528925619836
+        },
+        {
+          "lr": 0.5,
+          "valid_macro_f1": 0.9116954474097332
+        }
+      ],
+      "test_accuracy": 0.8842105263157894,
+      "test_macro_f1": 0.8731950006067224,
+      "classification_report": {
+        "international": {
+          "precision": 0.835820895522388,
+          "recall": 1.0,
+          "f1-score": 0.9105691056910569,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 1.0,
+          "recall": 0.717948717948718,
+          "f1-score": 0.835820895522388,
+          "support": 39.0
+        },
+        "accuracy": 0.8842105263157894,
+        "macro avg": {
+          "precision": 0.917910447761194,
+          "recall": 0.858974358974359,
+          "f1-score": 0.8731950006067224,
+          "support": 95.0
+        },
+        "weighted avg": {
+          "precision": 0.9032207384131973,
+          "recall": 0.8842105263157894,
+          "f1-score": 0.8798829983586559,
+          "support": 95.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          56,
+          0
+        ],
+        [
+          11,
+          28
+        ]
+      ],
+      "labels": [
+        "international",
+        "sports"
+      ],
+      "seconds_for_two_trials": 0.31934262509457767,
+      "model_bytes": 23432427,
+      "split_sizes": {
+        "train": 212,
+        "valid": 75,
+        "test": 95
+      }
+    }
+  },
+  "3class": {
+    "wordNgrams1": {
+      "parameters": {
+        "dim": 100,
+        "epoch": 25,
+        "minCount": 1,
+        "minn": 0,
+        "maxn": 0,
+        "loss": "softmax",
+        "bucket": 50000,
+        "thread": 1,
+        "seed": 2026,
+        "verbose": 0,
+        "lr": 0.5,
+        "wordNgrams": 1
+      },
+      "valid_macro_f1": 0.9300029472443265,
+      "validation_trials": [
+        {
+          "lr": 0.1,
+          "valid_macro_f1": 0.2934670781893004
+        },
+        {
+          "lr": 0.5,
+          "valid_macro_f1": 0.9300029472443265
+        }
+      ],
+      "test_accuracy": 0.9156626506024096,
+      "test_macro_f1": 0.906917867608755,
+      "classification_report": {
+        "international": {
+          "precision": 0.8688524590163934,
+          "recall": 0.9464285714285714,
+          "f1-score": 0.905982905982906,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 1.0,
+          "recall": 0.7692307692307693,
+          "f1-score": 0.8695652173913043,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.92,
+          "recall": 0.971830985915493,
+          "f1-score": 0.9452054794520548,
+          "support": 71.0
+        },
+        "accuracy": 0.9156626506024096,
+        "macro avg": {
+          "precision": 0.9296174863387977,
+          "recall": 0.895830108858278,
+          "f1-score": 0.906917867608755,
+          "support": 166.0
+        },
+        "weighted avg": {
+          "precision": 0.9215405885838437,
+          "recall": 0.9156626506024096,
+          "f1-score": 0.9142028629783102,
+          "support": 166.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          53,
+          0,
+          3
+        ],
+        [
+          6,
+          30,
+          3
+        ],
+        [
+          2,
+          0,
+          69
+        ]
+      ],
+      "labels": [
+        "international",
+        "sports",
+        "economy"
+      ],
+      "seconds_for_two_trials": 0.24458000005688518,
+      "model_bytes": 4870651,
+      "split_sizes": {
+        "train": 346,
+        "valid": 129,
+        "test": 166
+      }
+    },
+    "wordNgrams2": {
+      "parameters": {
+        "dim": 100,
+        "epoch": 25,
+        "minCount": 1,
+        "minn": 0,
+        "maxn": 0,
+        "loss": "softmax",
+        "bucket": 50000,
+        "thread": 1,
+        "seed": 2026,
+        "verbose": 0,
+        "lr": 0.5,
+        "wordNgrams": 2
+      },
+      "valid_macro_f1": 0.9451845826481112,
+      "validation_trials": [
+        {
+          "lr": 0.1,
+          "valid_macro_f1": 0.2010734929810074
+        },
+        {
+          "lr": 0.5,
+          "valid_macro_f1": 0.9451845826481112
+        }
+      ],
+      "test_accuracy": 0.891566265060241,
+      "test_macro_f1": 0.8705671270304665,
+      "classification_report": {
+        "international": {
+          "precision": 0.8181818181818182,
+          "recall": 0.9642857142857143,
+          "f1-score": 0.8852459016393442,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 1.0,
+          "recall": 0.6410256410256411,
+          "f1-score": 0.78125,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.92,
+          "recall": 0.971830985915493,
+          "f1-score": 0.9452054794520548,
+          "support": 71.0
+        },
+        "accuracy": 0.891566265060241,
+        "macro avg": {
+          "precision": 0.9127272727272727,
+          "recall": 0.8590474470756161,
+          "f1-score": 0.8705671270304665,
+          "support": 166.0
+        },
+        "weighted avg": {
+          "precision": 0.9044468784227819,
+          "recall": 0.891566265060241,
+          "f1-score": 0.8864584911620432,
+          "support": 166.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          54,
+          0,
+          2
+        ],
+        [
+          10,
+          25,
+          4
+        ],
+        [
+          2,
+          0,
+          69
+        ]
+      ],
+      "labels": [
+        "international",
+        "sports",
+        "economy"
+      ],
+      "seconds_for_two_trials": 0.5274313749978319,
+      "model_bytes": 24870651,
+      "split_sizes": {
+        "train": 346,
+        "valid": 129,
+        "test": 166
+      }
+    }
+  },
+  "4class": {
+    "wordNgrams1": {
+      "parameters": {
+        "dim": 100,
+        "epoch": 25,
+        "minCount": 1,
+        "minn": 0,
+        "maxn": 0,
+        "loss": "softmax",
+        "bucket": 50000,
+        "thread": 1,
+        "seed": 2026,
+        "verbose": 0,
+        "lr": 0.5,
+        "wordNgrams": 1
+      },
+      "valid_macro_f1": 0.8666418472174002,
+      "validation_trials": [
+        {
+          "lr": 0.1,
+          "valid_macro_f1": 0.23026315789473684
+        },
+        {
+          "lr": 0.5,
+          "valid_macro_f1": 0.8666418472174002
+        }
+      ],
+      "test_accuracy": 0.7887323943661971,
+      "test_macro_f1": 0.7622541201488571,
+      "classification_report": {
+        "international": {
+          "precision": 0.8524590163934426,
+          "recall": 0.9285714285714286,
+          "f1-score": 0.8888888888888888,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 0.9444444444444444,
+          "recall": 0.4358974358974359,
+          "f1-score": 0.5964912280701754,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.9344262295081968,
+          "recall": 0.8028169014084507,
+          "f1-score": 0.8636363636363636,
+          "support": 71.0
+        },
+        "education": {
+          "precision": 0.5753424657534246,
+          "recall": 0.8936170212765957,
+          "f1-score": 0.7,
+          "support": 47.0
+        },
+        "accuracy": 0.7887323943661971,
+        "macro avg": {
+          "precision": 0.8266680390248771,
+          "recall": 0.7652256967884776,
+          "f1-score": 0.7622541201488571,
+          "support": 213.0
+        },
+        "weighted avg": {
+          "precision": 0.8354760396096669,
+          "recall": 0.7887323943661971,
+          "f1-score": 0.7852540727262743,
+          "support": 213.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          52,
+          1,
+          1,
+          2
+        ],
+        [
+          7,
+          17,
+          0,
+          15
+        ],
+        [
+          0,
+          0,
+          57,
+          14
+        ],
+        [
+          2,
+          0,
+          3,
+          42
+        ]
+      ],
+      "labels": [
+        "international",
+        "sports",
+        "economy",
+        "education"
+      ],
+      "seconds_for_two_trials": 0.4326680840458721,
+      "model_bytes": 6483031,
+      "split_sizes": {
+        "train": 486,
+        "valid": 166,
+        "test": 213
+      }
+    },
+    "wordNgrams2": {
+      "parameters": {
+        "dim": 100,
+        "epoch": 25,
+        "minCount": 1,
+        "minn": 0,
+        "maxn": 0,
+        "loss": "softmax",
+        "bucket": 50000,
+        "thread": 1,
+        "seed": 2026,
+        "verbose": 0,
+        "lr": 0.5,
+        "wordNgrams": 2
+      },
+      "valid_macro_f1": 0.8228304362239063,
+      "validation_trials": [
+        {
+          "lr": 0.1,
+          "valid_macro_f1": 0.12738095238095237
+        },
+        {
+          "lr": 0.5,
+          "valid_macro_f1": 0.8228304362239063
+        }
+      ],
+      "test_accuracy": 0.7136150234741784,
+      "test_macro_f1": 0.6823271594752908,
+      "classification_report": {
+        "international": {
+          "precision": 0.8305084745762712,
+          "recall": 0.875,
+          "f1-score": 0.8521739130434782,
+          "support": 56.0
+        },
+        "sports": {
+          "precision": 1.0,
+          "recall": 0.3076923076923077,
+          "f1-score": 0.47058823529411764,
+          "support": 39.0
+        },
+        "economy": {
+          "precision": 0.9056603773584906,
+          "recall": 0.676056338028169,
+          "f1-score": 0.7741935483870968,
+          "support": 71.0
+        },
+        "education": {
+          "precision": 0.48314606741573035,
+          "recall": 0.9148936170212766,
+          "f1-score": 0.6323529411764706,
+          "support": 47.0
+        },
+        "accuracy": 0.7136150234741784,
+        "macro avg": {
+          "precision": 0.8048287298376231,
+          "recall": 0.6934105656854384,
+          "f1-score": 0.6823271594752908,
+          "support": 213.0
+        },
+        "weighted avg": {
+          "precision": 0.8099447255270579,
+          "recall": 0.7136150234741784,
+          "f1-score": 0.7078075609280909,
+          "support": 213.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          49,
+          0,
+          0,
+          7
+        ],
+        [
+          10,
+          12,
+          1,
+          16
+        ],
+        [
+          0,
+          0,
+          48,
+          23
+        ],
+        [
+          0,
+          0,
+          4,
+          43
+        ]
+      ],
+      "labels": [
+        "international",
+        "sports",
+        "economy",
+        "education"
+      ],
+      "seconds_for_two_trials": 0.7583286670269445,
+      "model_bytes": 26483031,
+      "split_sizes": {
+        "train": 486,
+        "valid": 166,
+        "test": 213
+      }
+    }
+  }
+}

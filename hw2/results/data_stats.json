@@ -1,0 +1,117 @@
+{
+  "external": {
+    "file": "thucnews_train.txt",
+    "sha256": "ba6fcbbb8fb809a9eb2be443b6b4db533c147861d94ebe0931b8c6092d8abe94",
+    "bytes": 9946122,
+    "max_per_source_category": 5000,
+    "kept_per_source_category": {
+      "0": 5000,
+      "1": 5000,
+      "2": 5000,
+      "3": 5000,
+      "4": 5000,
+      "5": 5000,
+      "6": 5000,
+      "7": 5000,
+      "8": 5000,
+      "9": 5000
+    },
+    "articles": 50000,
+    "tokens": 501292,
+    "removed": {
+      "short": 10,
+      "duplicate": 129
+    },
+    "url": "https://raw.githubusercontent.com/649453932/Chinese-Text-Classification-Pytorch/master/THUCNews/data/train.txt",
+    "note": "THUCNews title subset; source category labels are discarded before training.",
+    "exact_january_title_overlaps_removed": 0,
+    "articles_after_overlap_check": 50000,
+    "tokens_after_overlap_check": 501292
+  },
+  "january": {
+    "file": "1998-01-2003版-带音.txt",
+    "encoding": "gb18030",
+    "sha256": "37b85555df2f72642ff9815ac01f51d4f50024d80ca0e2e8a6be6f93b1038639",
+    "bytes": 5320005,
+    "raw_articles": 3132,
+    "decode_error": null,
+    "removed": {
+      "outside_date_or_page": 2059,
+      "short_article": 3,
+      "weekend": 205
+    },
+    "damaged_ids": [],
+    "split_by_date": {
+      "train": "1998-01-05..16",
+      "valid": "1998-01-19..21",
+      "test": "1998-01-22..27"
+    },
+    "page_labels": {
+      "02": "economy",
+      "05": "education",
+      "06": "international",
+      "08": "sports"
+    },
+    "label_names": {
+      "international": "国际",
+      "sports": "体育",
+      "economy": "国内经济",
+      "education": "科教文卫"
+    }
+  },
+  "splits": {
+    "train": {
+      "articles": 486,
+      "tokens": 120241,
+      "labels": {
+        "economy": 134,
+        "education": 140,
+        "international": 159,
+        "sports": 53
+      },
+      "dates": [
+        "19980105",
+        "19980106",
+        "19980107",
+        "19980108",
+        "19980109",
+        "19980112",
+        "19980113",
+        "19980114",
+        "19980115",
+        "19980116"
+      ]
+    },
+    "valid": {
+      "articles": 166,
+      "tokens": 33642,
+      "labels": {
+        "economy": 54,
+        "education": 37,
+        "international": 46,
+        "sports": 29
+      },
+      "dates": [
+        "19980119",
+        "19980120",
+        "19980121"
+      ]
+    },
+    "test": {
+      "articles": 213,
+      "tokens": 47577,
+      "labels": {
+        "economy": 71,
+        "education": 47,
+        "international": 56,
+        "sports": 39
+      },
+      "dates": [
+        "19980122",
+        "19980123",
+        "19980126",
+        "19980127"
+      ]
+    }
+  }
+}

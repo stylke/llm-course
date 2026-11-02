@@ -1,0 +1,311 @@
+{
+  "prediction_tables_checked": 36,
+  "article_ids_unique": true,
+  "article_hashes_unique": true,
+  "date_splits_disjoint": true,
+  "model_arrays_finite": true,
+  "reloaded_predictions_match": true,
+  "test_document_vectors_finite": true,
+  "hash_collisions": {
+    "unique_ngram_strings": 93802,
+    "occupied_buckets": 42265,
+    "bucket_count": 50000,
+    "extra_strings_sharing_buckets": 51537,
+    "note": "A collision count is not a direct measure of semantic damage."
+  },
+  "validation_selection_matches": true,
+  "subword_examples": {
+    "足球": [
+      "<足",
+      "<足球",
+      "足",
+      "足球",
+      "足球>",
+      "球",
+      "球>"
+    ],
+    "互联网": [
+      "<互",
+      "<互联",
+      "互",
+      "互联",
+      "互联网",
+      "联",
+      "联网",
+      "联网>",
+      "网",
+      "网>"
+    ]
+  },
+  "group_neighbors": {
+    "足球+篮球+排球": [
+      [
+        "虾球",
+        0.976295530796051
+      ],
+      [
+        "球坛",
+        0.9688660502433777
+      ],
+      [
+        "篮板球",
+        0.9662401080131531
+      ],
+      [
+        "乒乓球",
+        0.9642446041107178
+      ],
+      [
+        "足球队",
+        0.9635123014450073
+      ]
+    ],
+    "银行+金融+贷款": [
+      [
+        "工商银行",
+        0.970056414604187
+      ],
+      [
+        "外资银行",
+        0.9667161703109741
+      ],
+      [
+        "商业银行",
+        0.9620659351348877
+      ],
+      [
+        "兴业银行",
+        0.9567093849182129
+      ],
+      [
+        "信贷",
+        0.9560531377792358
+      ]
+    ]
+  },
+  "analogy_trials": {
+    "美国+北京-中国": [
+      [
+        "美加州",
+        0.7733742594718933
+      ],
+      [
+        "北京晚报",
+        0.7687157988548279
+      ],
+      [
+        "美院",
+        0.7634182572364807
+      ],
+      [
+        "美术馆",
+        0.7601039409637451
+      ],
+      [
+        "北京饭店",
+        0.7595129013061523
+      ]
+    ],
+    "篮球+足球-比赛": [
+      [
+        "输球",
+        0.9136726260185242
+      ],
+      [
+        "足球宝贝",
+        0.9111926555633545
+      ],
+      [
+        "任意球",
+        0.9101688265800476
+      ],
+      [
+        "虾球",
+        0.9044287204742432
+      ],
+      [
+        "眼球",
+        0.9042019844055176
+      ]
+    ]
+  },
+  "classification_errors": {
+    "tfidf": {
+      "count": 31,
+      "first_six_in_date_order": [
+        {
+          "id": "19980122-02-002",
+          "title": "浇树要浇根",
+          "true": "economy",
+          "predicted": "education",
+          "probabilities": {
+            "economy": 0.26062123963344086,
+            "education": 0.2631983512470578,
+            "international": 0.24559384841603846,
+            "sports": 0.23058656070346292
+          }
+        },
+        {
+          "id": "19980122-02-008",
+          "title": "去年地质找矿有重大进展",
+          "true": "economy",
+          "predicted": "education",
+          "probabilities": {
+            "economy": 0.2683229797998752,
+            "education": 0.2687303156685257,
+            "international": 0.24020558000959474,
+            "sports": 0.22274112452200434
+          }
+        },
+        {
+          "id": "19980122-05-001",
+          "title": "有决心就有魄力有突破才有希望出版产业造『大船』",
+          "true": "education",
+          "predicted": "economy",
+          "probabilities": {
+            "economy": 0.28380620904216836,
+            "education": 0.2779239465710522,
+            "international": 0.22431460868879372,
+            "sports": 0.21395523569798575
+          }
+        },
+        {
+          "id": "19980122-05-007",
+          "title": "通信支撑网实力更增强华为同步设备填补国内一项空白",
+          "true": "education",
+          "predicted": "economy",
+          "probabilities": {
+            "economy": 0.2841152681108948,
+            "education": 0.2817454721109848,
+            "international": 0.22511402389443538,
+            "sports": 0.20902523588368507
+          }
+        },
+        {
+          "id": "19980122-06-013",
+          "title": "海外有乡情",
+          "true": "international",
+          "predicted": "economy",
+          "probabilities": {
+            "economy": 0.2621858342522061,
+            "education": 0.2536157829588353,
+            "international": 0.2539703857799044,
+            "sports": 0.2302279970090543
+          }
+        },
+        {
+          "id": "19980122-08-002",
+          "title": "昔日『冰球沙皇』今朝黯然认罪",
+          "true": "sports",
+          "predicted": "international",
+          "probabilities": {
+            "economy": 0.22139512897826336,
+            "education": 0.24713578363569325,
+            "international": 0.2756503018367392,
+            "sports": 0.25581878554930415
+          }
+        }
+      ],
+      "pairs": {
+        "economy->education": 10,
+        "education->economy": 11,
+        "international->economy": 3,
+        "sports->international": 2,
+        "international->education": 2,
+        "sports->education": 2,
+        "sports->economy": 1
+      }
+    },
+    "ft_adapted_idf": {
+      "count": 60,
+      "first_six_in_date_order": [
+        {
+          "id": "19980122-02-002",
+          "title": "浇树要浇根",
+          "true": "economy",
+          "predicted": "education",
+          "probabilities": {
+            "economy": 0.20484060929491035,
+            "education": 0.34042345391164563,
+            "international": 0.13682554238339834,
+            "sports": 0.3179103944100457
+          }
+        },
+        {
+          "id": "19980122-02-005",
+          "title": "省力的头戴伞",
+          "true": "economy",
+          "predicted": "education",
+          "probabilities": {
+            "economy": 0.24674446684797255,
+            "education": 0.3307655117212777,
+            "international": 0.13033431335857007,
+            "sports": 0.29215570807217967
+          }
+        },
+        {
+          "id": "19980122-02-006",
+          "title": "山西运城展开“打假”战役",
+          "true": "economy",
+          "predicted": "education",
+          "probabilities": {
+            "economy": 0.19924177164073442,
+            "education": 0.39919993737765325,
+            "international": 0.17711062407252381,
+            "sports": 0.22444766690908857
+          }
+        },
+        {
+          "id": "19980122-05-001",
+          "title": "有决心就有魄力有突破才有希望出版产业造『大船』",
+          "true": "education",
+          "predicted": "economy",
+          "probabilities": {
+            "economy": 0.48001740844257645,
+            "education": 0.29059070454230307,
+            "international": 0.09601198095875028,
+            "sports": 0.13337990605637015
+          }
+        },
+        {
+          "id": "19980122-05-006",
+          "title": "测绘迈上法制轨道一些违法现象仍不同程度存在",
+          "true": "education",
+          "predicted": "economy",
+          "probabilities": {
+            "economy": 0.3563209136158544,
+            "education": 0.2916832689093426,
+            "international": 0.2312767176735085,
+            "sports": 0.12071909980129467
+          }
+        },
+        {
+          "id": "19980122-05-007",
+          "title": "通信支撑网实力更增强华为同步设备填补国内一项空白",
+          "true": "education",
+          "predicted": "economy",
+          "probabilities": {
+            "economy": 0.5364487683466301,
+            "education": 0.24139566891094438,
+            "international": 0.1018010517367203,
+            "sports": 0.12035451100570521
+          }
+        }
+      ],
+      "pairs": {
+        "economy->education": 19,
+        "education->economy": 14,
+        "education->sports": 3,
+        "education->international": 2,
+        "international->sports": 5,
+        "international->economy": 4,
+        "international->education": 2,
+        "sports->international": 4,
+        "sports->education": 4,
+        "economy->international": 1,
+        "sports->economy": 1,
+        "economy->sports": 1
+      }
+    }
+  }
+}

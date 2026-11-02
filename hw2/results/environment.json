@@ -1,0 +1,37 @@
+{
+  "python": "3.10.18",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "versions": {
+    "gensim": "4.3.3",
+    "numpy": "1.26.4",
+    "scipy": "1.13.1",
+    "sklearn": "1.6.1"
+  },
+  "seed": 2026,
+  "common_embedding_parameters": {
+    "min_count": 2,
+    "negative": 5,
+    "hs": 0,
+    "sample": 0.001,
+    "epochs": 5,
+    "workers": 1,
+    "seed": 2026,
+    "alpha": 0.025,
+    "min_alpha": 0.0001,
+    "ns_exponent": 0.75,
+    "shrink_windows": true
+  },
+  "classifier_C_grid": [
+    0.1,
+    1.0,
+    10.0
+  ],
+  "classifier_class_weight": "balanced",
+  "external_sentences": 50000,
+  "adapted_sentences": 55953,
+  "external_tokens": 501292,
+  "adapted_tokens": 621533,
+  "hash_function": "first 8 bytes of SHA256, little endian",
+  "fit_scope": "TF-IDF, LSI, IDF and classifiers: January train only; embeddings as named"
+}

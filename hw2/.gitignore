@@ -1,0 +1,11 @@
+.venv*/
+__pycache__/
+.mplconfig/
+models/
+data/raw/
+data/embedding_sentences.txt
+data/external_articles.jsonl
+data/january.jsonl
+data/jieba.cache
+data/supervised/
+tools/

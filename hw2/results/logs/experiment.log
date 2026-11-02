@@ -1,0 +1,37 @@
+tfidf                2class  valid F1=0.9715  test F1=0.9329
+tfidf                3class  valid F1=0.9773  test F1=0.9213
+tfidf                4class  valid F1=0.9068  test F1=0.8599
+lsi                  2class  valid F1=0.9859  test F1=0.9781
+lsi                  3class  valid F1=0.9773  test F1=0.9171
+lsi                  4class  valid F1=0.9019  test F1=0.8447
+Trained w2v_cbow: 2.05s
+w2v_cbow             2class  valid F1=0.8647  test F1=0.7409
+w2v_cbow             3class  valid F1=0.7601  test F1=0.6861
+w2v_cbow             4class  valid F1=0.6059  test F1=0.5357
+Trained w2v_sg: 6.11s
+w2v_sg               2class  valid F1=0.9438  test F1=0.8301
+w2v_sg               3class  valid F1=0.9189  test F1=0.7645
+w2v_sg               4class  valid F1=0.7330  test F1=0.6907
+Trained ft_external: 9.03s
+ft_external          2class  valid F1=0.9719  test F1=0.8513
+ft_external          3class  valid F1=0.9257  test F1=0.8241
+ft_external          4class  valid F1=0.8015  test F1=0.7094
+Trained ft_3_6: 7.66s
+ft_3_6               2class  valid F1=0.9860  test F1=0.8518
+ft_3_6               3class  valid F1=0.9427  test F1=0.7868
+ft_3_6               4class  valid F1=0.7873  test F1=0.6881
+Trained ft_adapted: 11.73s
+ft_adapted           2class  valid F1=0.9715  test F1=0.8506
+ft_adapted           3class  valid F1=0.9551  test F1=0.8272
+ft_adapted           4class  valid F1=0.8204  test F1=0.7117
+ft_adapted_idf       2class  valid F1=0.9715  test F1=0.8713
+ft_adapted_idf       3class  valid F1=0.9570  test F1=0.8578
+ft_adapted_idf       4class  valid F1=0.8209  test F1=0.7192
+Trained ft_dim50: 8.97s
+ft_dim50             2class  valid F1=0.9715  test F1=0.8506
+ft_dim50             3class  valid F1=0.9570  test F1=0.8272
+ft_dim50             4class  valid F1=0.8198  test F1=0.7232
+Trained ft_window3: 8.80s
+ft_window3           2class  valid F1=0.9438  test F1=0.8403
+ft_window3           3class  valid F1=0.9220  test F1=0.8027
+ft_window3           4class  valid F1=0.8059  test F1=0.7053
