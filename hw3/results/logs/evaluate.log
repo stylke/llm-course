@@ -1,0 +1,12 @@
+2026-11-07T14:38:12
+/Users/zym/course/llm/hw3/.venv/bin/python /Users/zym/course/llm/hw3/evaluate.py --device mps
+Validation merge=mean: F1=0.5325
+Validation merge=center: F1=0.5336
+Test articles: 553, punctuation F1 0.5380
+Benchmark sequential batch=1: 2.753s, 19664 chars/s, calls=207
+Benchmark fixed batch=1: 2.700s, 20044 chars/s, calls=184
+Benchmark fixed batch=4: 1.043s, 51915 chars/s, calls=46
+Benchmark fixed batch=8: 0.594s, 91137 chars/s, calls=23
+Benchmark fixed batch=16: 0.519s, 104385 chars/s, calls=12
+
+exit_code=0

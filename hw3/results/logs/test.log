@@ -1,0 +1,20 @@
+2026-11-07T14:44:32
+/Users/zym/course/llm/hw3/.venv/bin/python -m unittest discover -s /Users/zym/course/llm/hw3 -p test_*.py -v
+test_batch_invariance_and_character_preservation (test_hw3.DataTests) ... ok
+test_boundary_and_type_metrics (test_hw3.DataTests) ... ok
+test_center_weights_and_invalid_sizes (test_hw3.DataTests) ... ok
+test_cleanup (test_hw3.DataTests) ... ok
+test_lexical_numbers (test_hw3.DataTests) ... ok
+test_removed_structural_marks (test_hw3.DataTests) ... ok
+test_repeated_marks (test_hw3.DataTests) ... ok
+test_sequential_progress_without_stops (test_hw3.DataTests) ... ok
+test_split_integrity (test_hw3.DataTests) ... ok
+test_token_alignment (test_hw3.DataTests) ... ok
+test_window_coverage (test_hw3.DataTests) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.088s
+
+OK
+
+exit_code=0

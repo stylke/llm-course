@@ -1,0 +1,5 @@
+torch==2.8.0
+transformers==4.57.1
+numpy==1.26.4
+scikit-learn==1.6.1
+matplotlib==3.10.0

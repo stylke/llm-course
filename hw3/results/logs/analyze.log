@@ -1,0 +1,65 @@
+2026-11-07T14:41:40
+/Users/zym/course/llm/hw3/.venv/bin/python /Users/zym/course/llm/hw3/analyze.py --device mps
+Matplotlib is building the font cache; this may take a moment.
+{
+  "saved_prediction_articles": 553,
+  "saved_prediction_characters": 279140,
+  "metrics_recomputed": true,
+  "sklearn_punctuation_micro_f1": 0.5380267319661259,
+  "article_split_and_hashes_disjoint": true,
+  "pretrained_checksums_match": true,
+  "model_parameters_finite": true,
+  "encoder_updated": true,
+  "reload_prediction_articles_match": 5,
+  "batch_prediction_differences": {
+    "1": 0,
+    "4": 0,
+    "8": 0,
+    "16": 0
+  },
+  "packages": {
+    "certifi": "2026.10.23",
+    "charset-normalizer": "3.5.2",
+    "cloudpickle": "3.1.2",
+    "contourpy": "1.3.2",
+    "cycler": "0.12.1",
+    "filelock": "4.1.0",
+    "fonttools": "4.65.0",
+    "fsspec": "2026.9.0",
+    "hf-xet": "1.8.0",
+    "huggingface_hub": "0.36.2",
+    "idna": "3.20",
+    "Jinja2": "3.1.6",
+    "joblib": "1.6.0",
+    "kiwisolver": "1.5.1",
+    "MarkupSafe": "3.0.4",
+    "matplotlib": "3.10.0",
+    "mpmath": "1.3.0",
+    "networkx": "3.4.2",
+    "numpy": "1.26.4",
+    "packaging": "26.3",
+    "pillow": "12.3.0",
+    "pip": "23.0.1",
+    "pyparsing": "3.3.3",
+    "python-dateutil": "3.0.0",
+    "PyYAML": "6.0.3",
+    "regex": "2026.9.29",
+    "requests": "2.34.2",
+    "safetensors": "0.8.0",
+    "scikit-learn": "1.6.1",
+    "scipy": "1.15.3",
+    "setuptools": "65.5.0",
+    "six": "1.17.0",
+    "sympy": "1.14.0",
+    "threadpoolctl": "3.8.0",
+    "tokenizers": "0.22.2",
+    "torch": "2.8.0",
+    "tqdm": "4.70.1",
+    "transformers": "4.57.1",
+    "typing_extensions": "4.16.0",
+    "tzdata": "2026.6",
+    "urllib3": "2.8.0"
+  }
+}
+
+exit_code=0
